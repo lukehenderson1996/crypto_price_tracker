@@ -1,0 +1,5 @@
+2020-03-06 01:59:44,357,logger name,DEBUG,a debug message
+2020-03-06 01:59:44,357,logger name,INFO,an info message
+2020-03-06 01:59:44,357,logger name,WARNING,A Checkout this warning.
+2020-03-06 01:59:44,357,logger name,ERROR,An error writen here.
+2020-03-06 01:59:44,357,logger name,CRITICAL,Something very critical happened.
