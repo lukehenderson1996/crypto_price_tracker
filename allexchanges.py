@@ -1,5 +1,7 @@
 all exchanges
 
+need to add korbit and bitso after currency exchange api is found
+
 bit-x
 
 bit2c
@@ -13,7 +15,7 @@ bitcoincentral
 bitcoinde
 
 bitcoinsnorway
- 
+
 bitcurex
 
 bitfinex
