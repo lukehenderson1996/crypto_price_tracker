@@ -1,5 +1,6 @@
 #updated for python 3 usage
 import requests, json
+import time
 from time import sleep, localtime, strftime
 import sys
 
@@ -20,7 +21,7 @@ def getBitstamp():
     except requests.ConnectionError:
         print("Error querying Bitstamp API")
 
-def getBitfinex(): #GENERATING KEY ERRORS
+def getBitfinex(): #GENERATING KEY ERRORS bc rate
     URL = "https://api.bitfinex.com/v1/pubticker/btcusd"
     try:
         r = requests.get(URL)
@@ -56,12 +57,18 @@ def getItbit():
     except requests.ConnectionError:
         print("Error querying Itbit API")
 
+progStart = time.time()
+lastFinexFetch = time.time()
 
 while True:
-    sleep(2)
+    iterTime = time.time()
     try:
         lastBitstamp = str(getBitstamp())
-        lastBitfinex = "rate errors :(" #str(getBitfinex()) #"rate errors :(" #
+        if time.time()-lastFinexFetch > 4:
+            lastBitfinex = str(getBitfinex()) #"rate errors :("
+            lastFinexFetch = time.time()
+        else:
+            lastBitfinex = ""
         lastKraken = str(getKraken())
         lastBitflyer = str(getBitflyer())
         lastItbit = str(getItbit())
@@ -71,6 +78,8 @@ while True:
         f.write(strftime("%Y-%m-%d %H:%M:%S", localtime()) + " , " + lastKraken + " , " + lastBitstamp + " , " + lastBitfinex + " , " + lastBitflyer + " , " + lastItbit + "\r\n")
         f.close()
         f=open('csv/BTC.csv', "a+")
+    except KeyboardInterrupt:
+        exit()
     except:
         print("------------------ERROR------------------")
         print(sys.exc_info())
