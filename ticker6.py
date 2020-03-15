@@ -21,7 +21,7 @@ def getBitstamp():
     except requests.ConnectionError:
         print("Error querying Bitstamp API")
 
-def getBitfinex(): #GENERATING KEY ERRORS
+def getBitfinex(): #GENERATING KEY ERRORS bc rate
     URL = "https://api.bitfinex.com/v1/pubticker/btcusd"
     try:
         r = requests.get(URL)
