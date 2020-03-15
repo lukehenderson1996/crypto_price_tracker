@@ -1,10 +1,13 @@
 import requests
+import time
+from time import sleep
 
 url = "https://api.kraken.com/0/public/Ticker?pair=XBTUSD"
 
-response = requests.request("GET", url)
-
-print(response.text)
+while True:
+    sleep(0) #1 or less is right number
+    response = requests.request("GET", url)
+    print(response.text)
 
 
 
@@ -17,5 +20,3 @@ print(response.text)
 #    l = low array(<today>, <last 24 hours>),
 #    h = high array(<today>, <last 24 hours>),
 #    o = today's opening price
-
-
