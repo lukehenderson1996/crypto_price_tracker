@@ -7,10 +7,13 @@ import os
 import logging
 
 
-if not os.path.exists('csv/dated' + strftime("%Y-%m-%d_%H", localtime())):
-    os.mkdir('csv/dated' + strftime("%Y-%m-%d_%H", localtime()))
+fetchTime = localtime()
 
-f=open('csv/dated/BTC.csv', "a+")
-f.write("Time,Kraken,Bitstamp,Bitfinex,Bitflyer,Itbit\r\n")
 
-print(strftime("%Y-%m-%d_%H", localtime()))
+if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime)):
+    os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
+
+f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
+f.write("This is a test\r\n")
+
+print("done")
