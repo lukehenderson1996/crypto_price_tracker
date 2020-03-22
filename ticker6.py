@@ -7,10 +7,10 @@ import os
 import logging
 
 # create logger, set header for excel
-fetchTime = localtime()
-if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime)):
-    os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
-f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
+# fetchTime = localtime()
+# if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime)):
+#     os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
+# f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
 #no header for individual hour files
 #f.write("Time,Kraken,Bitstamp,Bitfinex,Bitflyer,Itbit\r\n")
 
@@ -77,39 +77,52 @@ lastFinexFetch = time.time()
 while True:
     fetchTime = localtime()
     iterTime = time.time()
-    try:
-        lastBitstamp = str(getBitstamp())
-        if time.time()-lastFinexFetch > 6: #4 seconds caused errors on 03-17 4PM
-            try:
-                lastBitfinex = str(getBitfinex()) #"rate errors :("
-                lastFinexFetch = time.time()
-            except KeyboardInterrupt:
-                exit()
-            except:
-                lastBitfinex = "str() error"
-        else:
-            lastBitfinex = "       "
-        lastKraken = str(getKraken())
-        lastBitflyer = str(getBitflyer())
-        lastItbit = str(getItbit())
-        print("\r\n" + strftime("%Y-%m-%d %H:%M:%S", fetchTime))
-        #update print to be a function eventually with more currencies
-        print("Bitstamp: $" + lastBitstamp.ljust(7, '0')[:7] + "    Itbit: $" + lastItbit.ljust(7, '0')[:7] + "    Kraken: $" + lastKraken.ljust(7, '0')[:7] + "    Bitfinex: $" + lastBitfinex.ljust(7, '0')[:7])
-        #file handling
-        f.write(strftime("%Y-%m-%d %H:%M:%S", fetchTime) + " , " + lastKraken + " , " + lastBitstamp + " , " + lastBitfinex + " , " + lastBitflyer + " , " + lastItbit + "\r\n")
-        f.close()
+    if int(strftime("%M", fetchTime)) % 10 == 0: #minute is a multiple of 10
+        #create folder and header
         if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime)):
             os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
-        f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
-    except KeyboardInterrupt:
-        exit()
-    except SystemExit:
-        exit()
-    except:
-        print("------------------ERROR------------------")
-        print(sys.exc_info())
-        f.write(strftime("%Y-%m-%d %H:%M:%S", localtime()) + " , " + "ERROR" + " , " + "ERROR" + " , " + "ERROR" + " , " + str(sys.exc_info()) + "\r\n")
-        f.close()
-        if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", localtime())):
-            os.mkdir('datedCSV/' + strftime("%Y-%m-%d", localtime()))
-        f=open('datedCSV/' + strftime("%Y-%m-%d", localtime()) + '/BTC_' + strftime("%H", localtime()) + '.csv', "a+")
+        if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv'): #file does not yet exist
+            f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
+            f.write("Time,Kraken,Bitstamp,Bitfinex,Bitflyer,Itbit\r\n")
+            f.close()
+
+        #fetch and log code
+        try:
+            lastBitstamp = str(getBitstamp())
+            if time.time()-lastFinexFetch > 6: #4 seconds caused errors on 03-17 4PM
+                try:
+                    lastBitfinex = str(getBitfinex()) #"rate errors :("
+                    lastFinexFetch = time.time()
+                except KeyboardInterrupt:
+                    exit()
+                except:
+                    lastBitfinex = "str() error"
+            else:
+                lastBitfinex = "       "
+            lastKraken = str(getKraken())
+            lastBitflyer = str(getBitflyer())
+            lastItbit = str(getItbit())
+            print("\r\n" + strftime("%Y-%m-%d %H:%M:%S", fetchTime))
+            #update print to be a function eventually with more currencies
+            print("Bitstamp: $" + lastBitstamp.ljust(7, '0')[:7] + "    Itbit: $" + lastItbit.ljust(7, '0')[:7] + "    Kraken: $" + lastKraken.ljust(7, '0')[:7] + "    Bitfinex: $" + lastBitfinex.ljust(7, '0')[:7])
+            #file handling
+            if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime)):
+                os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
+            f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
+            f.write(strftime("%Y-%m-%d %H:%M:%S", fetchTime) + " , " + lastKraken + " , " + lastBitstamp + " , " + lastBitfinex + " , " + lastBitflyer + " , " + lastItbit + "\r\n")
+            f.close()
+        except KeyboardInterrupt:
+            exit()
+        except SystemExit:
+            exit()
+        except:
+            print("------------------ERROR------------------")
+            print(sys.exc_info())
+            if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", localtime())):
+                os.mkdir('datedCSV/' + strftime("%Y-%m-%d", localtime()))
+            f=open('datedCSV/' + strftime("%Y-%m-%d", localtime()) + '/BTC_' + strftime("%H", localtime()) + '.csv', "a+")
+            f.write(strftime("%Y-%m-%d %H:%M:%S", localtime()) + " , " + "ERROR" + " , " + "ERROR" + " , " + "ERROR" + " , " + str(sys.exc_info()) + "\r\n")
+            f.close()
+    else:
+        #sleep and wait
+        sleep(2)
