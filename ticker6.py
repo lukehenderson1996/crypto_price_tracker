@@ -13,6 +13,7 @@ import logging
 # f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
 #no header for individual hour files
 #f.write("Time,Kraken,Bitstamp,Bitfinex,Bitflyer,Itbit\r\n")
+f.close()
 
 
 
