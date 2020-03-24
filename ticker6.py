@@ -13,7 +13,7 @@ import logging
 # f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
 #no header for individual hour files
 #f.write("Time,Kraken,Bitstamp,Bitfinex,Bitflyer,Itbit\r\n")
-f.close()
+# f.close()
 
 
 
@@ -78,7 +78,13 @@ lastFinexFetch = time.time()
 while True:
     fetchTime = localtime()
     iterTime = time.time()
-    if int(strftime("%M", fetchTime)) % 10 == 0: #minute is a multiple of 10
+    #look for kill command
+    endProc=open("kill_process", "r")
+    endProcCont =endProc.read()
+    if endProcCont[:4] == "true":
+        exit()
+    endProc.close()
+    if True: #int(strftime("%M", fetchTime)) % 10 == 0: #minute is a multiple of 10
         #create folder and header
         if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime)):
             os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
@@ -89,6 +95,7 @@ while True:
 
         #fetch and log code
         try:
+            #run fetching calls
             lastBitstamp = str(getBitstamp())
             if time.time()-lastFinexFetch > 6: #4 seconds caused errors on 03-17 4PM
                 try:
