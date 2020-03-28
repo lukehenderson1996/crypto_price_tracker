@@ -15,7 +15,8 @@ import logging
 #f.write("Time,Kraken,Bitstamp,Bitfinex,Bitflyer,Itbit\r\n")
 # f.close()
 
-
+MXN_USD = 1/23.5818
+EUR_USD = 6238.80/6019.56
 
 def getBitstamp():
     URL = 'https://www.bitstamp.net/api/ticker/'
@@ -72,6 +73,28 @@ def getItbit():
     except: #requests.ConnectionError:
         return "get error"
 
+def getBitso():
+    URL = "https://api.bitso.com/v3/ticker?book=btc_mxn"
+    try:
+        r = requests.get(URL)
+        priceFloat = float(json.loads(r.text)['payload']['last'])*MXN_USD
+        return priceFloat
+    except KeyboardInterrupt:
+        exit()
+    except: #requests.ConnectionError:
+        return "get error"
+
+def getCoinMetro():
+    URL = "https://exchange.coinmetro.com/open/prices/BTCEUR"
+    try:
+        r = requests.get(URL)
+        priceFloat = float(json.loads(r.text)['latestPrices'][0]['price'])*EUR_USD
+        return priceFloat
+    except KeyboardInterrupt:
+        exit()
+    except: #requests.ConnectionError:
+        return "get error"
+
 progStart = time.time()
 lastFinexFetch = time.time()
 
@@ -90,7 +113,7 @@ while True:
             os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
         if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv'): #file does not yet exist
             f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
-            f.write("Time,Kraken,Bitstamp,Bitfinex,Bitflyer,Itbit\r\n")
+            f.write("Time,Kraken,Bitstamp,Bitfinex,Bitflyer,Itbit,Bitso,CoinMetro\r\n")
             f.close()
 
         #fetch and log code
@@ -110,6 +133,8 @@ while True:
             lastKraken = str(getKraken())
             lastBitflyer = str(getBitflyer())
             lastItbit = str(getItbit())
+            lastBitso = str(getBitso())
+            lastCoinMetro = str(getCoinMetro())
             print("\r\n" + strftime("%Y-%m-%d %H:%M:%S", fetchTime))
             #update print to be a function eventually with more currencies
             print("Bitstamp: $" + lastBitstamp.ljust(7, '0')[:7] + "    Itbit: $" + lastItbit.ljust(7, '0')[:7] + "    Kraken: $" + lastKraken.ljust(7, '0')[:7] + "    Bitfinex: $" + lastBitfinex.ljust(7, '0')[:7])
@@ -117,7 +142,7 @@ while True:
             if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime)):
                 os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
             f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
-            f.write(strftime("%Y-%m-%d %H:%M:%S", fetchTime) + " , " + lastKraken + " , " + lastBitstamp + " , " + lastBitfinex + " , " + lastBitflyer + " , " + lastItbit + "\r\n")
+            f.write(strftime("%Y-%m-%d %H:%M:%S", fetchTime) + " , " + lastKraken + " , " + lastBitstamp + " , " + lastBitfinex + " , " + lastBitflyer + " , " + lastItbit + " , " + lastBitso + " , " + lastCoinMetro + "\r\n")
             f.close()
         except KeyboardInterrupt:
             exit()
