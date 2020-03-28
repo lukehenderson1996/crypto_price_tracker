@@ -7,9 +7,15 @@ url = "https://exchange.coinmetro.com/open/prices/BTCEUR"
 EUR_USD = 6238.80/6019.56
 
 while True:
-    sleep(0) #1 or less is right number
     response = requests.request("GET", url)
-    print(response.text)
+    # print(response.text)
+
+    #this block demonstrates that the data can be hours old
+    print(time.time())
+    print(json.loads(response.text)['latestPrices'][0]['timestamp'])
+    print("")
+
+    sleep(4) #1 or less is right number
 
 
     # #test keying
