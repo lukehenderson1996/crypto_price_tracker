@@ -5,19 +5,19 @@ need to add korbit, but fees are 0.2%
 bitcoincentral might work but has no help
 
 #ones with low fees:
-name        Maker   Taker       security
-PrimeXBT    0.05    0.05        b
-Bex500      0.05    0.05        f
-bitmex      0.075   -0.025      a+ (US not allowed)
-ternion     0.08%	-0.03%      b (us not allowed)
-BitOffer   	0.075%	-0.025%	    F
-CoinMetro   0.10%	-0.05%      A+
-BaseFEX SC flag 10	0.06%	0.02%	 9.0E-5  A+
-PrimeBit    VC flag 4	0.075%	-0.025%	   0.0005  B
-Bankera VG flag 13	0.10%	0.00%	 0.0005  B
-GDAC    KR flag 20	0%	0%	   0.001   B-
-Poloni DEX  9	0.00%	0.00%	  A+
-Fcoin Exchange  67	0.03%	0.029%	    A+
+feasib      name        Maker   Taker       security
+no api      PrimeXBT    0.05    0.05        b
+security?   Bex500      0.05    0.05        f
+USA ban     bitmex      0.075   -0.025      a+ (US not allowed)
+USA ban     ternion     0.08%	-0.03%      b (us not allowed)
+security?   BitOffer   	0.075%	-0.025%	    F
+low volume  CoinMetro   0.10%	-0.05%      A+
+            BaseFEX SC flag 10	0.06%	0.02%	 9.0E-5  A+
+            PrimeBit    VC flag 4	0.075%	-0.025%	   0.0005  B
+            Bankera VG flag 13	0.10%	0.00%	 0.0005  B
+            GDAC    KR flag 20	0%	0%	   0.001   B-
+            Poloni DEX  9	0.00%	0.00%	  A+
+            Fcoin Exchange  67	0.03%	0.029%	    A+
 #more at https://www.cryptowisser.com/exchanges
 
 
