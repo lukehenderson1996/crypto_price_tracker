@@ -78,7 +78,7 @@ while True:
 
             print("\r\n" + strftime("%Y-%m-%d %H:%M:%S", fetchTime))
             #update print to be a function eventually with more currencies
-            print("Bitstamp: $" + lastBitstamp.ljust(7, '0')[:7] + "    Itbit: $" + lastItbit.ljust(7, '0')[:7] + "    Kraken: $" + lastKraken.ljust(7, '0')[:7] + "    Bitfinex: $" + lastBitfinex.ljust(7, '0')[:7])
+            print("Bitstamp: $" + lastBitstamp.ljust(7, '0')[:7] + "    Kraken: $" + lastKraken.ljust(7, '0')[:7] + "    Bitfinex: $" + lastBitfinex.ljust(7, '0')[:7])
             #file handling
             if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime)):
                 os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
