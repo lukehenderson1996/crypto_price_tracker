@@ -1,5 +1,5 @@
 #Luke Henderson
-#Version 1.1
+#Version 1.2
 import requests, json
 import time
 from time import sleep, localtime, strftime
@@ -7,7 +7,7 @@ import sys
 import os
 
 
-CSV_HEADER = "Time,Coinbase Pro,Kraken,Bitstamp,Bitflyer,Bitfinex,BaseFEX,\r\n"
+CSV_HEADER = "Time,Coinbase,Kraken,Bitstamp,LUNO,Bitflyer,Bitfinex,BitBay,Gemini,BaseFEX\r\n"
 
 MXN_USD = 1/23.5818
 EUR_USD = 6238.80/6019.56
@@ -58,9 +58,10 @@ while True:
 
 
             #run fetching calls----------------------------------------------------------------------------------------------------------------------------------------
-            laskCoinbasePro = getLastPrice(1, "https://api.pro.coinbase.com/products/BTC-USD/ticker", 'price')
+            laskCoinbase = getLastPrice(1, "https://api.pro.coinbase.com/products/BTC-USD/ticker", 'price')
             lastKraken = getLastPrice(1, "https://api.kraken.com/0/public/Ticker?pair=XBTUSD", 'result','XXBTZUSD','c',0) #getKraken():
             lastBitstamp = getLastPrice(1, 'https://www.bitstamp.net/api/ticker/', 'last') #bitstamp
+            lastLuno = getLastPrice(EUR_USD, 'https://api.mybitx.com/api/1/ticker?pair=XBTEUR', 'last_trade')
             lastBitflyer = getLastPrice(1, "https://api.bitflyer.com/v1/ticker?product_code=BTC_USD", 'ltp') #getBitflyer():
             if time.time()-lastFinexFetch > 6: #4 seconds caused errors on 03-17 4PM
                 try:
@@ -76,6 +77,8 @@ while True:
             # lastItbit = getLastPrice(1, "https://api.itbit.com/v1/markets/XBTUSD/ticker",'lastPrice') #getItbit():
             # lastBitso = getLastPrice(MXN_USD, "https://api.bitso.com/v3/ticker?book=btc_mxn", 'payload','last') #getBitso():
             # lastCoinMetro = getLastPrice(EUR_USD, "https://exchange.coinmetro.com/open/prices/BTCEUR", 'latestPrices', 0, 'price') #getCoinMetro():
+            lastBitBay = getLastPrice(1, 'https://bitbay.net/API/Public/BTCUSD/ticker.json', 'last')
+            lastGemini = getLastPrice(1, 'https://api.gemini.com/v1/pubticker/btcusd', 'last')
             lastBaseFEX = getLastPrice(1, "https://api.basefex.com/depth@BTCUSD/snapshot", 'lastPrice')
 
 
@@ -86,7 +89,7 @@ while True:
             if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime)):
                 os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
             f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
-            f.write(strftime("%Y-%m-%d %H:%M:%S", fetchTime) + " , " + laskCoinbasePro + " , " + lastKraken + " , " + lastBitstamp + " , " + lastBitflyer + " , " + lastBitfinex + " , " + lastBaseFEX + "\r\n")
+            f.write(strftime("%Y-%m-%d %H:%M:%S", fetchTime) + " , " + laskCoinbase + " , " + lastKraken + " , " + lastBitstamp + " , " + lastLuno + " , " + lastBitflyer + " , " + lastBitfinex + " , " + lastBitBay + " , " + lastGemini + " , " + lastBaseFEX + "\r\n")
             f.close()
         except KeyboardInterrupt:
             exit()

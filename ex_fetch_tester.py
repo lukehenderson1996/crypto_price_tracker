@@ -1,41 +1,194 @@
-#BaseFEX
+#PrimeBit
+#not added yet, 2.5-4s for call, might need coroutines
 import requests, json
 import time
-from time import sleep
+from time import sleep, localtime, strftime
 
-URL = "https://api.basefex.com/depth@BTCUSD/snapshot"
-
+URL = "https://app.primebit.com/api/v1/trading/market_data/ticker/live"
+# URL = "https://app.primebit.com/api/v1/trading/market_data/summary/live" #this one has the same info for some reason?
 
 while True:
+    # #test get
     # response = requests.request("GET", URL)
     # print(response.text)
-    # sleep(4) #1 or less is right number
+    # sleep(20) #1 or less is right number
 
 
     #test keying
+    currTime = time.time()
     r = requests.get(URL)
-    priceFloat = float(json.loads(r.text)['lastPrice'])
-    print(priceFloat)
-    sleep(0)
+    priceFloat = float(json.loads(r.text)['BTCUSD']['last_price'])
+    print(str(priceFloat) + "      " + str(time.time()-currTime))
+    # sleep(0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# #template
+# import requests, json
+# import time
+# from time import sleep
+#
+# URL = ""
+#
+# while True:
+#     #test get
+#     response = requests.request("GET", URL)
+#     print(response.text)
+#     sleep(4) # or less is right number
+#
+#
+#     # #test keying
+#     # currTime = time.time()
+#     # r = requests.get(URL)
+#     # priceFloat = float(json.loads(r.text)[''])
+#     # print(str(priceFloat) + "      " + str(time.time()-currTime))
+#     # sleep(1)
+
+
+
+
+
+
+
+
+
+
+# #Gemini
+# import requests, json
+# import time
+# from time import sleep
+#
+# URL = "https://api.gemini.com/v1/pubticker/btcusd"
+#
+# while True:
+#     # #test get
+#     # response = requests.request("GET", URL)
+#     # print(response.text)
+#     # sleep(4) #1 or less is right number
+#
+#
+#     #test keying
+#     r = requests.get(URL)
+#     priceFloat = float(json.loads(r.text)['last'])
+#     print(priceFloat)
+#     sleep(1)
+
+
+
+
+
+
+
+
+# #bitbay
+# import requests, json
+# import time
+# from time import sleep
+#
+# URL = "https://bitbay.net/API/Public/BTCUSD/ticker.json"
+#
+#
+# while True:
+#     # #test get
+#     # response = requests.request("GET", URL)
+#     # print(response.text)
+#     # sleep(4) #1 or less is right number
+#
+#
+#     #test keying
+#     r = requests.get(URL)
+#     priceFloat = float(json.loads(r.text)['last'])
+#     print(priceFloat)
+#     sleep(1)
+
+
+
+
+
+
+# #LUNO
+# import requests, json
+# import time
+# from time import sleep
+#
+# URL = "https://api.mybitx.com/api/1/ticker?pair=XBTEUR"
+#
+#
+# while True:
+#     # #test get
+#     # response = requests.request("GET", URL)
+#     # print(response.text)
+#     # sleep(4) #1 or less is right number
+#
+#
+#     #test keying
+#     r = requests.get(URL)
+#     priceFloat = float(json.loads(r.text)['last_trade'])
+#     print(priceFloat)
+#     sleep(1)
+
+
+
+
+
+
+
+
+
 
 
 #
-# https://api.basefex.com/instruments/prices
-# 'lastPrice'
-# {
-# "to":189858295,"bestPrices":
-# {"ask":6548,"bid":6545.5},
-# "lastPrice":6547.0,"bids":
-# {"6531.5":12378,"5670.5":100,"6540.5":3704,"5470.5":100,"6544":5109,"6538.5":4012,"3300":3300,"6543":3419,"6537":10542,"6545":8362,"6534.5":9725,"6534":13424,"6541.5":7113,"6535.5":8974,"4000":1000,"6542.5":10014,"4160":300,"4554":200,"6540":4014,"6538":9726,"6544.5":4714,"6545.5":3702,"6532.5":11422},
-# "asks":{"6559":14887,"6550.5":5230,"6560.5":16135,"6548.5":3791,"6551.5":6143,"6563":16126,"6553.5":7819,"9999":175,"6557":10786,"6554":8474,"6555":11693,"16666":150,"6548":5664,"6549":9183,"6552.5":9183,"14545":100,"6558":11690,"6549.5":4453,"6561.5":14880,"6551":5668,"6552":11694,"6550":9953,"6556":12674},
-# "from":0
-# }
+#
+# #BaseFEX
+# import requests, json
+# import time
+# from time import sleep
+#
+# URL = "https://api.basefex.com/depth@BTCUSD/snapshot"
+#
+#
+# while True:
+#     # response = requests.request("GET", URL)
+#     # print(response.text)
+#     # sleep(4) #1 or less is right number
+#
+#
+#     #test keying
+#     r = requests.get(URL)
+#     priceFloat = float(json.loads(r.text)['lastPrice'])
+#     print(priceFloat)
+#     sleep(0)
+#
+#
+# #
+# # https://api.basefex.com/instruments/prices
+# # 'lastPrice'
+# # {
+# # "to":189858295,"bestPrices":
+# # {"ask":6548,"bid":6545.5},
+# # "lastPrice":6547.0,"bids":
+# # {"6531.5":12378,"5670.5":100,"6540.5":3704,"5470.5":100,"6544":5109,"6538.5":4012,"3300":3300,"6543":3419,"6537":10542,"6545":8362,"6534.5":9725,"6534":13424,"6541.5":7113,"6535.5":8974,"4000":1000,"6542.5":10014,"4160":300,"4554":200,"6540":4014,"6538":9726,"6544.5":4714,"6545.5":3702,"6532.5":11422},
+# # "asks":{"6559":14887,"6550.5":5230,"6560.5":16135,"6548.5":3791,"6551.5":6143,"6563":16126,"6553.5":7819,"9999":175,"6557":10786,"6554":8474,"6555":11693,"16666":150,"6548":5664,"6549":9183,"6552.5":9183,"14545":100,"6558":11690,"6549.5":4453,"6561.5":14880,"6551":5668,"6552":11694,"6550":9953,"6556":12674},
+# # "from":0
+# # }
 
 
 
 
 
-
+s
 
 
 
@@ -354,14 +507,7 @@ while True:
 
 
 
-# #gemini
-# import requests
-#
-# url = "https://api.gemini.com/v1/pubticker/btcusd"
-#
-# response = requests.request("GET", url)
-#
-# print(response.text)
+
 
 
 

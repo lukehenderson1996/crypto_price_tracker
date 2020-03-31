@@ -1,5 +1,8 @@
 all exchanges
 
+Check Volume:
+https://data.bitcoinity.org/markets/volume/30d?c=e&t=b
+
 need to add korbit, but fees are 0.2%
 
 bitcoincentral might work but has no help
@@ -24,7 +27,7 @@ low volume  CoinMetro   0.10%	-0.05%      A+
 
 
 #these have high fees
-bit-x (is luno now?)
+bit-x (is luno now)
 bit2c
 bitbay
 bitcoin.co.id
