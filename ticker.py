@@ -7,7 +7,7 @@ import sys
 import os
 
 
-CSV_HEADER = "Time,Kraken,Bitstamp,Bitfinex,Bitflyer, BaseFEX\r\n"
+CSV_HEADER = "Time,Kraken,Bitstamp,Bitfinex,Bitflyer,BaseFEX,Coinbase Pro\r\n"
 
 MXN_USD = 1/23.5818
 EUR_USD = 6238.80/6019.56
@@ -58,6 +58,7 @@ while True:
 
 
             #run fetching calls----------------------------------------------------------------------------------------------------------------------------------------
+            laskCoinbasePro = getLastPrice(1, "https://api.pro.coinbase.com/products/BTC-USD/ticker", 'price')
             lastBitstamp = getLastPrice(1, 'https://www.bitstamp.net/api/ticker/', 'last') #bitstamp
             if time.time()-lastFinexFetch > 6: #4 seconds caused errors on 03-17 4PM
                 try:
@@ -84,7 +85,7 @@ while True:
             if not os.path.exists('datedCSV/' + strftime("%Y-%m-%d", fetchTime)):
                 os.mkdir('datedCSV/' + strftime("%Y-%m-%d", fetchTime))
             f=open('datedCSV/' + strftime("%Y-%m-%d", fetchTime) + '/BTC_' + strftime("%H", fetchTime) + '.csv', "a+")
-            f.write(strftime("%Y-%m-%d %H:%M:%S", fetchTime) + " , " + lastKraken + " , " + lastBitstamp + " , " + lastBitfinex + " , " + lastBitflyer + " , " + lastBaseFEX + "\r\n")
+            f.write(strftime("%Y-%m-%d %H:%M:%S", fetchTime) + " , " + lastKraken + " , " + lastBitstamp + " , " + lastBitfinex + " , " + lastBitflyer + " , " + lastBaseFEX + " , " + laskCoinbasePro + "\r\n")
             f.close()
         except KeyboardInterrupt:
             exit()
