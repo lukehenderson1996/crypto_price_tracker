@@ -1,22 +1,37 @@
-#Gemini
+#PrimeBit
+#not added yet, 2.5-4s for call, might need coroutines
 import requests, json
 import time
-from time import sleep
+from time import sleep, localtime, strftime
 
-URL = "https://api.gemini.com/v1/pubticker/btcusd"
+URL = "https://app.primebit.com/api/v1/trading/market_data/ticker/live"
+# URL = "https://app.primebit.com/api/v1/trading/market_data/summary/live" #this one has the same info for some reason?
 
 while True:
     # #test get
     # response = requests.request("GET", URL)
     # print(response.text)
-    # sleep(4) #1 or less is right number
+    # sleep(20) #1 or less is right number
 
 
     #test keying
+    currTime = time.time()
     r = requests.get(URL)
-    priceFloat = float(json.loads(r.text)['last'])
-    print(priceFloat)
-    sleep(1)
+    priceFloat = float(json.loads(r.text)['BTCUSD']['last_price'])
+    print(str(priceFloat) + "      " + str(time.time()-currTime))
+    # sleep(0)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -35,10 +50,44 @@ while True:
 #
 #
 #     # #test keying
+#     # currTime = time.time()
 #     # r = requests.get(URL)
 #     # priceFloat = float(json.loads(r.text)[''])
-#     # print(priceFloat)
+#     # print(str(priceFloat) + "      " + str(time.time()-currTime))
 #     # sleep(1)
+
+
+
+
+
+
+
+
+
+
+# #Gemini
+# import requests, json
+# import time
+# from time import sleep
+#
+# URL = "https://api.gemini.com/v1/pubticker/btcusd"
+#
+# while True:
+#     # #test get
+#     # response = requests.request("GET", URL)
+#     # print(response.text)
+#     # sleep(4) #1 or less is right number
+#
+#
+#     #test keying
+#     r = requests.get(URL)
+#     priceFloat = float(json.loads(r.text)['last'])
+#     print(priceFloat)
+#     sleep(1)
+
+
+
+
 
 
 

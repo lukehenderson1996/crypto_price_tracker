@@ -27,7 +27,7 @@ low volume  CoinMetro   0.10%	-0.05%      A+
 
 
 #these have high fees
-bit-x (is luno now?)
+bit-x (is luno now)
 bit2c
 bitbay
 bitcoin.co.id
