@@ -1,5 +1,8 @@
 all exchanges
 
+Check Volume:
+https://data.bitcoinity.org/markets/volume/30d?c=e&t=b
+
 need to add korbit, but fees are 0.2%
 
 bitcoincentral might work but has no help
