@@ -27,41 +27,21 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-# print(bcolors.FAIL)
-# print(DEBUG_TOOL)
-# print(bcolors.ENDC)
 
 
 
-
-
-
-
+logFile=open("datedCSV/filemanlog", "r")
+logFileCont = logFile.read()
+parsedString = parse("lastRun: {}", logFileCont)
+print(bcolors.FAIL)
+print(parsedString)
+print(bcolors.ENDC)
+if not parsedString is None:
+    lastRun = "Prefix" + parsedString[0]
+    print(lastRun)
+else:
+    print("Error: Parsing of header(s) failed")
+logFile.close()
 
 
 print("done")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#end
