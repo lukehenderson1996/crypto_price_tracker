@@ -96,7 +96,7 @@ while True:
     if len(fileList)==0:
         print(bcolors.FAIL  + "Error: No data files in directory" + bcolors.ENDC)
         exit()
-    fileList.reverse() #make it alphabetical order
+    fileList.sort() #make it alphabetical order
     #obtain CSV_HEADER of initial file and check congruency
     for i in range(len(fileList)):
         # print("checking " + fileList[i])
