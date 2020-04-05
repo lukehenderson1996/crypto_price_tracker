@@ -7,15 +7,6 @@ import os
 import logging
 from parse import *
 
-
-#Learned:
-# parsedFile = parse("startChar{}endChar", currWorkFileCont) #uses last matching endChar instead of first
-# parsedFile = search("Time,{}\n", currWorkFileCont) #search finds the first matching endChar
-
-
-
-
-
 #make text look unique
 class bcolors:
     HEADER = '\033[95m'
@@ -30,6 +21,9 @@ class bcolors:
 # print(bcolors.FAIL)
 # print(DEBUG_TOOL)
 # print(bcolors.ENDC)
+
+# print(bcolors.WARNING + "Success!" + bcolors.ENDC)
+# exit()
 
 
 

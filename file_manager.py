@@ -3,7 +3,7 @@ import time
 from time import sleep, localtime, strftime
 import sys
 import os
-from parse import * #pip install parse
+from parse import * #pip install parse (or pip3 install parse)
 #functionality bucket list:
     #run this on a schedule
     #automatically upload to google drive by reading password from a document on computer not on github, also use webcrawler gmail
