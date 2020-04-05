@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notes>
+  name the file "keys.xml"
+</notes>
+<keys>
+  <!-- exchange name(s) are: baseFex -->
+  <exchange_name>
+    <API_name>name_goes_here(optional)</API_name>
+    <!-- api name is optional -->
+    <API_key>public_key_goes_here</API_key>
+    <private_key>private_key_goes_here</private_key>
+  </exchange_name>
+</keys>
