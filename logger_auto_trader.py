@@ -1,5 +1,5 @@
 #Luke Henderson
-#Version info on ticker.py
+#Version info on auto_trader.py
 #Solely for BaseFEX use
 import time
 from time import sleep, localtime, strftime
@@ -17,6 +17,15 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+class logData:
+  pass
+  #timestamp
+  #request_type
+  #string
+  #signature
+  #server_response_simplified
+  #server_response
+
 
 
 #init loggers
@@ -32,48 +41,101 @@ def createLog(path):
 
 #update logger
 #all strings except: timestamp (int), sequence(int)
-def upLogs(timestamp, request_type, string, signature, server_response_simplified, server_response):
+def upLogs(logDataObj): #timestamp, request_type, string, signature, server_response_simplified, server_response,
+
+    #static XML creation
+    # verboseLog=open('auto_logs/logV_auto_trader.xml', "a+")
+    # apToFile(verboseLog, '<' + str(timestamp) + '>')
+    #
+    # apToFile(verboseLog, '  <time>' + strftime("%Y-%m-%d %H:%M:%S", localtime(timestamp)) + '</time>')
+    # apToFile(verboseLog, '  <request_type>' + request_type + '</request_type>')
+    # apToFile(verboseLog, '  <string>' + string + '</string>')
+    # apToFile(verboseLog, '  <signature>' + signature + '</signature>')
+    # apToFile(verboseLog, '  <server_response_simplified>' + server_response_simplified + '</server_response_simplified>')
+    # apToFile(verboseLog, '  <server_response>' + server_response + '</server_response>')
+    #
+    # apToFile(verboseLog, '</' + str(timestamp) + '>')
+    # apToFile(verboseLog, '\n\n')
+    # verboseLog.close()
+
+
+
+    #dynamic XML creation
     verboseLog=open('auto_logs/logV_auto_trader.xml', "a+")
-    apToFile(verboseLog, '<' + str(timestamp) + '>')
-
-    apToFile(verboseLog, '  <time>' + strftime("%Y-%m-%d %H:%M:%S", localtime(timestamp)) + '</time>')
-    apToFile(verboseLog, '  <request_type>' + request_type + '</request_type>')
-    apToFile(verboseLog, '  <string>' + string + '</string>')
-    apToFile(verboseLog, '  <signature>' + signature + '</signature>')
-    apToFile(verboseLog, '  <server_response_simplified>' + server_response_simplified + '</server_response_simplified>')
-    apToFile(verboseLog, '  <server_response>' + server_response + '</server_response>')
-
-    apToFile(verboseLog, '</' + str(timestamp) + '>')
+    if logDataObj.__dict__:
+        if 'timestamp' in logDataObj.__dict__.keys():
+            #begin entry
+            apToFile(verboseLog, '<' + str(logDataObj.__dict__['timestamp']) + '>')
+            apToFile(verboseLog, '  <time>' + strftime("%Y-%m-%d %H:%M:%S", localtime(logDataObj.__dict__['timestamp'])) + '</time>')
+            #populate inside of xml entry
+            keysList = list(logDataObj.__dict__.keys())
+            for i in range(len(keysList)):
+                if not keysList[i]=='timestamp':
+                    if not keysList[i]=='serverResponseJSON':
+                        apToFile(verboseLog, '  <' + keysList[i] + '>' + str(logDataObj.__dict__[keysList[i]]) + '</' + keysList[i] + '>')
+            #end entry
+            apToFile(verboseLog, '</' + str(logDataObj.__dict__['timestamp']) + '>')
+        else:
+            apToFile(verboseLog, '<' + str(time.time()) + '>')
+            apToFile(verboseLog, '  <time>' + strftime("%Y-%m-%d %H:%M:%S", localtime(time.time())) + '</time>')
+            apToFile(verboseLog, '  <error>True<error>\r\n  <error_msg>logDataObj has no timestamp</error_msg>')
+            apToFile(verboseLog, '</' + str(timestamp) + '>')
+    else:
+        apToFile(verboseLog, '<' + str(time.time()) + '>')
+        apToFile(verboseLog, '  <time>' + strftime("%Y-%m-%d %H:%M:%S", localtime(time.time())) + '</time>')
+        apToFile(verboseLog, '  <error>True<error>\r\n  <error_msg>logDataObj is empty</error_msg>')
+        apToFile(verboseLog, '</' + str(timestamp) + '>')
     apToFile(verboseLog, '\n\n')
     verboseLog.close()
 
 
 
+
+    #static XML creation
+    # simpLog=open('auto_logs/log_auto_trader.xml', "a+")
+    # apToFile(simpLog, '<' + str(timestamp) + '>')
+    #
+    # apToFile(simpLog, '  <time>' + strftime("%Y-%m-%d %H:%M:%S", localtime(timestamp)) + '</time>')
+    # apToFile(simpLog, '  <request_type>' + request_type + '</request_type>')
+    # apToFile(simpLog, '  <string>' + string + '</string>')
+    # apToFile(simpLog, '  <signature>' + signature + '</signature>')
+    # apToFile(simpLog, '  <server_response_simplified>' + server_response_simplified + '</server_response_simplified>')
+    #
+    # apToFile(simpLog, '</' + str(timestamp) + '>')
+    # apToFile(simpLog, '\n\n')
+    # simpLog.close()
+
+
+    #dynamic XML creation
     simpLog=open('auto_logs/log_auto_trader.xml', "a+")
-    apToFile(simpLog, '<' + str(timestamp) + '>')
-
-    apToFile(simpLog, '  <time>' + strftime("%Y-%m-%d %H:%M:%S", localtime(timestamp)) + '</time>')
-    apToFile(simpLog, '  <request_type>' + request_type + '</request_type>')
-    apToFile(simpLog, '  <string>' + string + '</string>')
-    apToFile(simpLog, '  <signature>' + signature + '</signature>')
-    apToFile(simpLog, '  <server_response_simplified>' + server_response_simplified + '</server_response_simplified>')
-
-    apToFile(simpLog, '</' + str(timestamp) + '>')
+    if logDataObj.__dict__:
+        if 'timestamp' in logDataObj.__dict__.keys():
+            #begin entry
+            apToFile(simpLog, '<' + str(logDataObj.__dict__['timestamp']) + '>')
+            apToFile(simpLog, '  <time>' + strftime("%Y-%m-%d %H:%M:%S", localtime(logDataObj.__dict__['timestamp'])) + '</time>')
+            #populate inside of xml entry
+            keysList = list(logDataObj.__dict__.keys())
+            for i in range(len(keysList)):
+                if not keysList[i]=='timestamp':
+                    if not keysList[i]=='serverResponseJSON':
+                        if not keysList[i]=='server_response':
+                            apToFile(simpLog, '  <' + keysList[i] + '>' + str(logDataObj.__dict__[keysList[i]]) + '</' + keysList[i] + '>')
+            #end entry
+            apToFile(simpLog, '</' + str(logDataObj.__dict__['timestamp']) + '>')
+        else:
+            apToFile(simpLog, '<' + str(time.time()) + '>')
+            apToFile(simpLog, '  <time>' + strftime("%Y-%m-%d %H:%M:%S", localtime(time.time())) + '</time>')
+            apToFile(simpLog, '  <error>True<error>\r\n  <error_msg>logDataObj has no timestamp</error_msg>')
+            apToFile(simpLog, '</' + str(timestamp) + '>')
+    else:
+        apToFile(simpLog, '<' + str(time.time()) + '>')
+        apToFile(simpLog, '  <time>' + strftime("%Y-%m-%d %H:%M:%S", localtime(time.time())) + '</time>')
+        apToFile(simpLog, '  <error>True<error>\r\n  <error_msg>logDataObj is empty</error_msg>')
+        apToFile(simpLog, '</' + str(timestamp) + '>')
     apToFile(simpLog, '\n\n')
     simpLog.close()
 
 
-# Verbose format:
-# <entry_timestamp>
-#   <time>2020-03-31 00:01:52</time>
-#   <error>True</error>
-#   <error_msg>err_msg_here</error_msg>
-#   <request_type>priceFetch/contractFetch/buy/sell</request_type>
-#   <string>GET/accounts1586059192</string>
-#   <signature>004cae60b45dd87f068142114c44262cc672718b128a555db01e0b34a99aa45e</signature>
-#   <server_response_simplified>price/contracts/order details/etc</server_response_simplified>
-#   <server_response>long response</server_response>
-# </entry_timestamp>
 
 def apToFile(file,writeString):
     file.write(writeString + "\r\n")

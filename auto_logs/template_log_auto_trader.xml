@@ -5,15 +5,13 @@ logV_auto_trader.xml is verbose output of that
 
 Format:
 <entry_timestamp>
-  <sequence_number>
-    <time>2020-03-31 00:01:52</time>
-    <error>True</error>
-    <error_msg>err_msg_here</error_msg>
-    <request_type>priceFetch/contractFetch/buy/sell</request_type>
-    <string>GET/accounts1586059192</string>
-    <signature>004cae60b45dd87f068142114c44262cc672718b128a555db01e0b34a99aa45e</signature>
-    <server_response_simplified>price/contracts/order details/etc</server_response_simplified>
-  </sequence_number>
+  <time>2020-03-31 00:01:52</time>
+  optional: <error>True</error>
+  optional: <error_msg>err_msg_here</error_msg> //optional
+  <request_type>priceFetch/contractFetch/buy/sell</request_type>
+  <string>GET/accounts1586059192</string>
+  <signature>004cae60b45dd87f068142114c44262cc672718b128a555db01e0b34a99aa45e</signature>
+  <server_response_simplified>price/contracts/order details/etc</server_response_simplified>
 </entry_timestamp>
 
 
@@ -23,14 +21,12 @@ Format:
 
 Verbose format:
 <entry_timestamp>
-  <sequence_number>
-    <time>2020-03-31 00:01:52</time>
-    <error>True</error>
-    <error_msg>err_msg_here</error_msg>
-    <request_type>priceFetch/contractFetch/buy/sell</request_type>
-    <string>GET/accounts1586059192</string>
-    <signature>004cae60b45dd87f068142114c44262cc672718b128a555db01e0b34a99aa45e</signature>
-    <server_response_simplified>price/contracts/order details/etc</server_response_simplified>
-    <server_response>long response</server_response>
-  </sequence_number>
+  <time>2020-03-31 00:01:52</time>
+  <error>True</error>
+  <error_msg>err_msg_here</error_msg>
+  <request_type>priceFetch/contractFetch/buy/sell</request_type>
+  <string>GET/accounts1586059192</string>
+  <signature>004cae60b45dd87f068142114c44262cc672718b128a555db01e0b34a99aa45e</signature>
+  <server_response_simplified>price/contracts/order details/etc</server_response_simplified>
+  <server_response>long response</server_response>
 </entry_timestamp>

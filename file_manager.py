@@ -1,4 +1,5 @@
 #Luke Henderson
+#Version info on ticker.py
 import time
 from time import sleep, localtime, strftime
 import sys

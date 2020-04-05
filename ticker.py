@@ -1,5 +1,5 @@
 #Luke Henderson
-#Version 1.3
+#Version 1.4
 import requests, json
 import time
 from time import sleep, localtime, strftime

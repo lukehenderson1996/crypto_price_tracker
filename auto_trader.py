@@ -1,5 +1,5 @@
 #Luke Henderson
-#Version info on ticker.py
+#Version 1.0
 #Solely for BaseFEX use
 import requests, json
 import time
@@ -52,7 +52,12 @@ def placeOrder(size, type, side):
         "type": type,
         "side": side
         }
-    execute_request(http_method, url, path, expires, data)
+    logDataObj = logData()
+    logDataObj.request_type = side
+    logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
+    print(bcolors.OKBLUE  + side + " order executed" + bcolors.ENDC)
+    upLogs(logDataObj)
+    return logDataObj
 
 #GET last price
 def getLastPrice():
@@ -62,9 +67,13 @@ def getLastPrice():
     timestamp = time.time()
     expires = int(round(timestamp) + 5)
     data = '' # empty request body
-    priceResponse = execute_request(http_method, url, path, expires, data)
-    lastBaseFEX = getPriceFloat(priceResponse, 'lastPrice')
-    return lastBaseFEX
+    logDataObj = logData()
+    logDataObj.request_type = "getLastPrice"
+    logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
+    logDataObj.lastBaseFEX = getPriceFloat(logDataObj.serverResponseJSON, 'lastPrice')
+    # print(bcolors.ENDC  + "Last price: " + str(logDataObj.lastBaseFEX) + bcolors.ENDC)
+    upLogs(logDataObj)
+    return logDataObj
 
 #GET account info
 def getAccountInfo():
@@ -74,11 +83,16 @@ def getAccountInfo():
     timestamp = time.time()
     expires = int(round(timestamp) + 5)
     data = '' # empty request body
-    getResponse = execute_request(http_method, url, path, expires, data)
-    return getResponse
+    logDataObj = logData()
+    logDataObj.request_type = "getAccountInfo"
+    logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
+    logDataObj.positionContracts = json.loads(logDataObj.serverResponseJSON.text)[0]['positions'][4]['size'] #BTC position
+    print(bcolors.OKBLUE  + "Number of position contracts: " + str(logDataObj.positionContracts) + bcolors.ENDC)
+    upLogs(logDataObj)
+    return logDataObj
 
 #assumes static apiSecret, apiKey
-def execute_request(http_method, url, path, expires, data):
+def execute_request(http_method, url, path, expires, data, logDataObj):
     #groom data
     if not len(data) == 0:
         strData = json.dumps(data)
@@ -87,12 +101,13 @@ def execute_request(http_method, url, path, expires, data):
 
     #display request
     tokenString = http_method + path + str(expires) + strData
-    print("String: " + tokenString)
+
 
     #create signature
     signature = generate_signature(apiSecret, http_method, path, expires, strData)
     auth_token = signature
-    print("signature: " + signature)
+    # print("String: " + tokenString)
+    # print("signature: " + signature)
     #create header
     hed = {'api-expires':str(expires),'api-key':apiKey,'api-signature':str(auth_token)}
 
@@ -101,11 +116,16 @@ def execute_request(http_method, url, path, expires, data):
         response = requests.get(url, headers=hed)
     elif http_method == 'POST':
         response = requests.post(url, headers=hed, json=data)
-    print(bcolors.OKBLUE  + "Server response: " + bcolors.ENDC)
     parsedJSON = json.loads(response.text) #whole JSON object
-    print(json.dumps(parsedJSON, indent=4, sort_keys=True))
-    upLogs(time.time(), "fix later", tokenString, signature, "fix later", json.dumps(parsedJSON))
-    return response
+    # print(bcolors.OKBLUE  + "Server response: " + bcolors.ENDC)
+    # print(json.dumps(parsedJSON, indent=4, sort_keys=True))
+    #log handling
+    logDataObj.timestamp = time.time()
+    logDataObj.string = tokenString
+    logDataObj.signature = signature
+    logDataObj.server_response = json.dumps(parsedJSON, indent=4, sort_keys=True)
+    logDataObj.serverResponseJSON = response
+    return logDataObj
 
 # The algorithm is: hex(HMAC_SHA256(secret, http_method + path + expires + data))
 # Upper-cased http_method, relative request path, unix timestamp expires.
@@ -136,6 +156,15 @@ def getPriceFloat(*args): #num of args will be 2 to 5 -> 0:JSON object, 1:Key0, 
         print(sys.exc_info())
         exit()
 
+def verifyContracts(num):
+    logDataObj = getAccountInfo()
+    positionContracts = logDataObj.positionContracts
+    if positionContracts != num:
+        if positionContracts > num:
+            logDataObj = placeOrder(positionContracts, "MARKET", "SELL")
+        if positionContracts < num:
+            logDataObj = placeOrder(-positionContracts, "MARKET", "BUY")
+
 
 #init code
 if os.path.exists('keys/keys.xml'): #file exists
@@ -150,43 +179,66 @@ if os.path.exists('keys/keys.xml'): #file exists
 else:
     print(bcolors.FAIL  + "Error: API keys file does not exist" + bcolors.ENDC)
 
+initLogs()
 
 
 
 #main loop
 while True:
-    initLogs()
 
-    #get last price
-    lastBaseFEX = getLastPrice()
-    print(bcolors.OKBLUE  + "Last price: " + str(lastBaseFEX) + bcolors.ENDC)
-
-    # #get num of contracts
-    # accountInfo = getAccountInfo()
-    # positionContracts = json.loads(accountInfo.text)[0]['positions'][4]['size'] #BTC position
-    # print(positionContracts)
+    verifyContracts(0)
+    #now contracts==0
 
 
-    # sleep(1)
-    #
-    # placeOrder(5, "MARKET", "BUY")
-    #
-    # sleep(5)
-    #
-    # placeOrder(5, "MARKET", "SELL")
-    #
-    # sleep(3)
+    logDataObj = placeOrder(5, "MARKET", "BUY")
+    verifyContracts(5)
+    logDataObj = getLastPrice()
+    buyPrice = logDataObj.lastBaseFEX
+
+    trigger = False
+
+    while trigger==False:
+        sleep(2)
+        logDataObj = getLastPrice()
+        lastPrice = logDataObj.lastBaseFEX
+        if lastPrice/buyPrice > 100.70/100:
+            trigger = True
+            print("lastPrice/buyPrice: " + str(lastPrice/buyPrice*100) + '%')
+            logDataObj = logData()
+            logDataObj.timestamp = time.time()
+            logDataObj.request_type = "nonrequest, trigger"
+            logDataObj.trigger = "greater"
+            logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100) + '%'
+            upLogs(logDataObj)
+        if lastPrice/buyPrice < 99.80/100:
+            trigger = True
+            print("lastPrice/buyPrice: " + str(lastPrice/buyPrice*100) + '%')
+            logDataObj = logData()
+            logDataObj.timestamp = time.time()
+            logDataObj.request_type = "nonrequest, trigger"
+            logDataObj.trigger = "lesser"
+            logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100) + '%'
+            upLogs(logDataObj)
+
+
+    logDataObj = placeOrder(5, "MARKET", "SELL")
+    verifyContracts(0)
+
+    sleep(30)
+
+
+
+
+    # #get last price
+    # logDataObj = getLastPrice()
+    # # get num of contracts
+    # logDataObj = getAccountInfo()
 
 
 
 
 
 
-
-
-
-
-    exit()
 
 
 
