@@ -180,8 +180,8 @@ else:
     print(bcolors.FAIL  + "Error: API keys file does not exist" + bcolors.ENDC)
 
 initLogs()
-
-
+sumChange = 0.0
+print("Cumulative gain/loss: " + str(sumChange) + '%')
 
 #main loop
 while True:
@@ -196,36 +196,39 @@ while True:
     buyPrice = logDataObj.lastBaseFEX
 
     trigger = False
-
     while trigger==False:
         sleep(2)
         logDataObj = getLastPrice()
         lastPrice = logDataObj.lastBaseFEX
         if lastPrice/buyPrice > 100.70/100:
             trigger = True
-            print("lastPrice/buyPrice: " + str(lastPrice/buyPrice*100) + '%')
+            print("lastPrice/buyPrice: " + str(lastPrice/buyPrice*100-100) + '%')
             logDataObj = logData()
             logDataObj.timestamp = time.time()
             logDataObj.request_type = "nonrequest, trigger"
             logDataObj.trigger = "greater"
-            logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100) + '%'
+            logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
+            sumChange += logDataObj.last_over_buy_ratio-0.08
+            print("Cumulative gain/loss: " + str(sumChange) + '%')
             upLogs(logDataObj)
         if lastPrice/buyPrice < 99.80/100:
             trigger = True
-            print("lastPrice/buyPrice: " + str(lastPrice/buyPrice*100) + '%')
+            print("lastPrice/buyPrice: " + str(lastPrice/buyPrice*100-100) + '%')
             logDataObj = logData()
             logDataObj.timestamp = time.time()
             logDataObj.request_type = "nonrequest, trigger"
             logDataObj.trigger = "lesser"
-            logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100) + '%'
+            logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
+            sumChange += logDataObj.last_over_buy_ratio-0.08
+            print("Cumulative gain/loss: " + str(sumChange) + '%')
             upLogs(logDataObj)
 
 
     logDataObj = placeOrder(5, "MARKET", "SELL")
     verifyContracts(0)
 
-    sleep(30)
 
+    sleep(60)
 
 
 
