@@ -208,7 +208,7 @@ while True:
             logDataObj.request_type = "nonrequest, trigger"
             logDataObj.trigger = "greater"
             logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
-            sumChange += logDataObj.last_over_buy_ratio-0.08
+            sumChange += lastPrice/buyPrice*100-100-0.08
             print("Cumulative gain/loss: " + str(sumChange) + '%')
             upLogs(logDataObj)
         if lastPrice/buyPrice < 99.80/100:
@@ -219,7 +219,7 @@ while True:
             logDataObj.request_type = "nonrequest, trigger"
             logDataObj.trigger = "lesser"
             logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
-            sumChange += logDataObj.last_over_buy_ratio-0.08
+            sumChange += lastPrice/buyPrice*100-100-0.08
             print("Cumulative gain/loss: " + str(sumChange) + '%')
             upLogs(logDataObj)
 

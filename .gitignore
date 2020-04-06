@@ -5,6 +5,8 @@ datedCSV/_20*
 datedCSV/fileman*
 keys/key*
 auto_logs/log*
+auto_logs/old*
+auto_logs/verbose*
 
 
 #recommeded from gitKraken:
