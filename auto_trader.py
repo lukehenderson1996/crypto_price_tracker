@@ -59,6 +59,28 @@ def placeOrder(size, type, side):
     upLogs(logDataObj)
     return logDataObj
 
+
+def verifyContracts(num):
+    contractsGoalMet = False
+    while contractsGoalMet==False:
+        logDataObj = getAccountInfo()
+        positionContracts = logDataObj.positionContracts
+        if not positionContracts is None:
+            if positionContracts==num:
+                contractsGoalMet = True
+            elif positionContracts != num:
+                if positionContracts > num:
+                    logDataObj = placeOrder(positionContracts-num, "MARKET", "SELL")
+                elif positionContracts < num:
+                    logDataObj = placeOrder(num-positionContracts, "MARKET", "BUY")
+                sleep(3)
+        else:
+            sleep(2)
+
+
+
+
+
 #GET last price
 def getLastPrice():
     http_method = 'GET'
@@ -86,7 +108,16 @@ def getAccountInfo():
     logDataObj = logData()
     logDataObj.request_type = "getAccountInfo"
     logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
-    logDataObj.positionContracts = json.loads(logDataObj.serverResponseJSON.text)[0]['positions'][4]['size'] #BTC position
+    try:
+        positionsDict = json.loads(logDataObj.serverResponseJSON.text)[0]['positions']
+        for i in range(len(positionsDict)):
+            if positionsDict[i]['symbol']=="BTCUSD":
+                btcusdKey = i
+        logDataObj.positionContracts = json.loads(logDataObj.serverResponseJSON.text)[0]['positions'][btcusdKey]['size'] #BTC position
+    except KeyboardInterrupt:
+        exit()
+    except:
+        logDataObj.positionContracts = None
     print(bcolors.OKBLUE  + "Number of position contracts: " + str(logDataObj.positionContracts) + bcolors.ENDC)
     upLogs(logDataObj)
     return logDataObj
@@ -156,14 +187,7 @@ def getPriceFloat(*args): #num of args will be 2 to 5 -> 0:JSON object, 1:Key0, 
         print(sys.exc_info())
         exit()
 
-def verifyContracts(num):
-    logDataObj = getAccountInfo()
-    positionContracts = logDataObj.positionContracts
-    if positionContracts != num:
-        if positionContracts > num:
-            logDataObj = placeOrder(positionContracts, "MARKET", "SELL")
-        if positionContracts < num:
-            logDataObj = placeOrder(-positionContracts, "MARKET", "BUY")
+
 
 
 #init code
@@ -181,19 +205,19 @@ else:
 
 initLogs()
 sumChange = 0.0
-print("Cumulative gain/loss: " + str(sumChange) + '%')
+print("Cumulative gain/loss: " + bcolors.OKGREEN + str(sumChange)[:5] + '%' + bcolors.ENDC)
+verifyContracts(0)
+#now contracts==0
 
 #main loop
 while True:
 
-    verifyContracts(0)
-    #now contracts==0
-
-
-    logDataObj = placeOrder(5, "MARKET", "BUY")
-    verifyContracts(5)
+    sleep(3)
     logDataObj = getLastPrice()
     buyPrice = logDataObj.lastBaseFEX
+    logDataObj = placeOrder(10, "MARKET", "BUY")
+    sleep(3)
+    verifyContracts(10)
 
     trigger = False
     while trigger==False:
@@ -202,33 +226,34 @@ while True:
         lastPrice = logDataObj.lastBaseFEX
         if lastPrice/buyPrice > 100.70/100:
             trigger = True
-            print("lastPrice/buyPrice: " + str(lastPrice/buyPrice*100-100) + '%')
+            print("lastPrice/buyPrice:   " + bcolors.OKGREEN + str(lastPrice/buyPrice*100-100)[:5] + '%' + bcolors.ENDC)
             logDataObj = logData()
             logDataObj.timestamp = time.time()
             logDataObj.request_type = "nonrequest, trigger"
             logDataObj.trigger = "greater"
             logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
             sumChange += lastPrice/buyPrice*100-100-0.08
-            print("Cumulative gain/loss: " + str(sumChange) + '%')
+            print("Cumulative gain/loss: " + str(sumChange)[:5] + '%')
             upLogs(logDataObj)
         if lastPrice/buyPrice < 99.80/100:
             trigger = True
-            print("lastPrice/buyPrice: " + str(lastPrice/buyPrice*100-100) + '%')
+            print("lastPrice/buyPrice:   " + bcolors.FAIL + str(lastPrice/buyPrice*100-100)[:5] + '%' + bcolors.ENDC)
             logDataObj = logData()
             logDataObj.timestamp = time.time()
             logDataObj.request_type = "nonrequest, trigger"
             logDataObj.trigger = "lesser"
             logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
             sumChange += lastPrice/buyPrice*100-100-0.08
-            print("Cumulative gain/loss: " + str(sumChange) + '%')
+            print("Cumulative gain/loss: " + str(sumChange)[:5] + '%')
             upLogs(logDataObj)
 
 
-    logDataObj = placeOrder(5, "MARKET", "SELL")
+    logDataObj = placeOrder(10, "MARKET", "SELL")
+    sleep(3)
     verifyContracts(0)
 
 
-    sleep(60)
+    # sleep(60)
 
 
 

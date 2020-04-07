@@ -1,0 +1,32 @@
+luke@Hostage-Server:~/Documents/crypto_price_tracker$ python3 auto_trader.py 
+
+
+Cumulative gain/loss: 0.0%
+Number of position contracts: 0.0
+BUY order executed
+Number of position contracts: 0.0
+BUY order executed
+lastPrice/buyPrice: 0.7147814018043022%
+Cumulative gain/loss: 0.6347814018043022%
+SELL order executed
+Number of position contracts: 0.0
+Number of position contracts: 0.0
+BUY order executed
+Number of position contracts: 0.0
+BUY order executed
+lastPrice/buyPrice: 0.7781833207079387%
+Cumulative gain/loss: 1.332964722512241%
+SELL order executed
+Number of position contracts: 0.0
+Number of position contracts: 0.0
+BUY order executed
+Number of position contracts: 0.0
+BUY order executed
+
+
+^CTraceback (most recent call last):
+  File "auto_trader.py", line 200, in <module>
+    sleep(2)
+KeyboardInterrupt
+luke@Hostage-Server:~/Documents/crypto_price_tracker$ 
+

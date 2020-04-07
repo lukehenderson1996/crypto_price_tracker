@@ -1,7 +1,40 @@
 all exchanges
 
+check details:
+https://www.cryptimi.com/cryptocurrency-exchanges/basefex-review
+
+check USDT balance in baseFEX
+https://etherscan.io/address/0x06fc0f530d12d372dc2e3dcb9b768dc3421349e6
+
 Check Volume:
 https://data.bitcoinity.org/markets/volume/30d?c=e&t=b
+!!!!! must be wrong !!!!!!!!
+use these:
+nomics leaves data out due to "transparency"
+https://nomics.com/exchanges?interval=30d
+https://coinmarketcap.com/rankings/exchanges/
+
+
+actual list:
+
+Binance  MLT
+Upbit  ROK
+Huobi  SIN
+Bittrex  USA
+Bithumb  KOR
+OKEx  MLT
+Bitfinex  HK
+Coinbase  USA
+Bitstamp  GBR
+Kraken  USA
+
+
+
+
+
+
+
+
 
 need to add korbit, but fees are 0.2%
 
@@ -16,9 +49,9 @@ USA ban     ternion     0.08%	-0.03%      b (us not allowed)
 security?   BitOffer   	0.075%	-0.025%	    F
 low volume  CoinMetro   0.10%	-0.05%      A+
             BaseFEX SC flag 10	0.06%	0.02%	 9.0E-5  A+
-            PrimeBit    VC flag 4	0.075%	-0.025%	   0.0005  B
-            Bankera VG flag 13	0.10%	0.00%	 0.0005  B
-            GDAC    KR flag 20	0%	0%	   0.001   B-
+USA ban     PrimeBit    VC flag 4	0.075%	-0.025%	   0.0005  B
+USA ban     Bankera VG flag 13	0.10%	0.00%	 0.0005  B
+try next    GDAC    KR flag 20	0%	0%	   0.001   B-
             Poloni DEX  9	0.00%	0.00%	  A+
             Fcoin Exchange  67	0.03%	0.029%	    A+
 #more at https://www.cryptowisser.com/exchanges
