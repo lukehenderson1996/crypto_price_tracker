@@ -1,0 +1,40 @@
+https://github.com/BaseFEX/basefex-api-docs/blob/master/api-doc_en.md#open-api-accounts
+
+
+Rate Limit info
+REST API limit to 180 per minite, WebSockets limit to 60 per minite. And three headers with every response indicate your request limit status.
+x-ratelimit-limit      # limit per minite
+x-ratelimit-remaining  # remaining request within current minite
+x-ratelimit-reset      # next timestamp when your can request(if reach limit)
+
+
+Get Cash and Position Detail
+Get Deposit and Withdrawal History
+Count Transactions
+
+Orders:
+Get Order Detail
+Place Order
+Cancel Order
+Get Order List
+Place Order in Batches
+Cancel Order in Batches
+Get Active Order List
+Count Orders
+Count Active Orders
+
+Trades:
+Get Trade List
+Get Count of Trades
+
+Positions:
+Adjust Leverage
+Set Risk Limit
+
+Misc:
+Get Market Price
+Get 24H Change of Market Price
+Get OrderBook Snapshot
+Get List of Contracts’ Detail
+
+WebSocket...

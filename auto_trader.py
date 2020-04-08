@@ -33,6 +33,38 @@ class bcolors:
 
 
 
+def getActiveOrderList(symbol): #symbol: BTCUSD, BTCUSDT
+    http_method = 'GET'
+    #path helper: https://api.basefex.com/orders?symbol=BTCUSD&type=LIMIT&side=BUY&status=NEW&limit=30
+    path = '/orders/opening?symbol=' + symbol
+    url = 'https://api.basefex.com' + path
+    timestamp = time.time()
+    expires = int(round(timestamp) + 5)
+    data = '' # empty request body
+    logDataObj = logData()
+    logDataObj.request_type = "getActiveOrderList"
+    logDataObj.symbol = symbol
+    logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
+    upLogs(logDataObj)
+    return logDataObj
+
+
+def checkOrder(id): #Get order information by order id
+    http_method = 'GET'
+    #path helper: https://api.basefex.com/orders?symbol=BTCUSD&type=LIMIT&side=BUY&status=NEW&limit=30
+    path = '/orders/' + id
+    url = 'https://api.basefex.com' + path
+    timestamp = time.time()
+    expires = int(round(timestamp) + 5)
+    data = '' # empty request body
+    logDataObj = logData()
+    logDataObj.request_type = "checkOrder"
+    logDataObj.id = id
+    logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
+    upLogs(logDataObj)
+    return logDataObj
+
+
 #POST order buy/sell
 def placeOrder(size, type, side):
     http_method = 'POST'
@@ -118,23 +150,20 @@ def getAccountInfo():
         exit()
     except:
         logDataObj.positionContracts = None
-    print(bcolors.OKBLUE  + "Number of position contracts: " + str(logDataObj.positionContracts) + bcolors.ENDC)
+    print(bcolors.OKBLUE  + "Number of contracts: " + str(logDataObj.positionContracts) + bcolors.ENDC)
     upLogs(logDataObj)
     return logDataObj
 
 #assumes static apiSecret, apiKey
 def execute_request(http_method, url, path, expires, data, logDataObj):
     #groom data
-    if not len(data) == 0:
+    if len(data) != 0:
         strData = json.dumps(data)
     else:
         strData = data
 
-    #display request
-    tokenString = http_method + path + str(expires) + strData
-
-
     #create signature
+    tokenString = http_method + path + str(expires) + strData
     signature = generate_signature(apiSecret, http_method, path, expires, strData)
     auth_token = signature
     # print("String: " + tokenString)
@@ -204,14 +233,22 @@ else:
     print(bcolors.FAIL  + "Error: API keys file does not exist" + bcolors.ENDC)
 
 initLogs()
+
+#init algorith 0.1
 sumChange = 0.0
 print("Cumulative gain/loss: " + bcolors.OKGREEN + str(sumChange)[:5] + '%' + bcolors.ENDC)
 verifyContracts(0)
 #now contracts==0
 
+
+
+
+
+
 #main loop
 while True:
 
+    #loop algorith 0.1
     sleep(3)
     logDataObj = getLastPrice()
     buyPrice = logDataObj.lastBaseFEX
@@ -253,14 +290,7 @@ while True:
     verifyContracts(0)
 
 
-    # sleep(60)
-
-
-
-    # #get last price
-    # logDataObj = getLastPrice()
-    # # get num of contracts
-    # logDataObj = getAccountInfo()
+    sleep(60)
 
 
 
@@ -268,7 +298,28 @@ while True:
 
 
 
-
+    # #run test
+    # logDataObj = getActiveOrderList('BTCUSD') #symbol: BTCUSD, BTCUSDT
+    # # logDataObj = placeOrder(1, "MARKET", "BUY")
+    # # logDataObj = getLastPrice()
+    # print(logDataObj.server_response)
+    # # #get last price
+    # # logDataObj = getLastPrice()
+    # # # get num of contracts
+    # # logDataObj = getAccountInfo()
+    # # # place order
+    # # placeOrder(size, type, side) #example: 10, "MARKET", "BUY"
+    # # #verifyContracts
+    # # verifyContracts(num)
+    # # #get active order list
+    # # logDataObj = getActiveOrderList(symbol) #symbol: BTCUSD, BTCUSDT
+    # # #check specific order
+    # # logDataObj = checkOrder(id) #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
+    #
+    #
+    #
+    #
+    # exit()
 
 
 
