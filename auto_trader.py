@@ -96,16 +96,19 @@ def verifyContracts(num):
     contractsGoalMet = False
     while contractsGoalMet==False:
         logDataObj = getAccountInfo()
-        positionContracts = logDataObj.positionContracts
-        if not positionContracts is None:
-            if positionContracts==num:
-                contractsGoalMet = True
-            elif positionContracts != num:
-                if positionContracts > num:
-                    logDataObj = placeOrder(positionContracts-num, "MARKET", "SELL")
-                elif positionContracts < num:
-                    logDataObj = placeOrder(num-positionContracts, "MARKET", "BUY")
-                sleep(3)
+        if not hasattr(logDataObj, 'error'):
+            positionContracts = logDataObj.positionContracts
+            if not positionContracts is None:
+                if positionContracts==num:
+                    contractsGoalMet = True
+                elif positionContracts != num:
+                    if positionContracts > num:
+                        logDataObj = placeOrder(positionContracts-num, "MARKET", "SELL")
+                    elif positionContracts < num:
+                        logDataObj = placeOrder(num-positionContracts, "MARKET", "BUY")
+                    sleep(3)
+            else:
+                sleep(2)
         else:
             sleep(2)
 
