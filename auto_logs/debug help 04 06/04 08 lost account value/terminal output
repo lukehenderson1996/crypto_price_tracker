@@ -1,0 +1,7043 @@
+luke@Hostage-Server:~/Documents/crypto_price_tracker$ python3 auto_trader.py 
+Cumulative gain/loss: 0.0%
+Number of contracts: 10.0
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.21%
+Cumulative gain/loss: -0.29%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.20%
+Cumulative gain/loss: -0.58%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   0.851%
+Cumulative gain/loss: 0.190%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.31%
+Cumulative gain/loss: -0.20%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.50%
+Cumulative gain/loss: -0.78%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.21%
+Cumulative gain/loss: -1.08%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.20%
+Cumulative gain/loss: -1.37%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.20%
+Cumulative gain/loss: -1.65%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.34%
+Cumulative gain/loss: -2.08%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   0.914%
+Cumulative gain/loss: -1.25%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.56%
+Cumulative gain/loss: -1.89%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.60%
+Cumulative gain/loss: -2.58%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   0.779%
+Cumulative gain/loss: -1.88%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.23%
+Cumulative gain/loss: -2.20%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   0.706%
+Cumulative gain/loss: -1.57%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.23%
+Cumulative gain/loss: -1.89%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.20%
+Cumulative gain/loss: -2.17%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.23%
+Cumulative gain/loss: -2.48%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.28%
+Cumulative gain/loss: -2.85%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   0.705%
+Cumulative gain/loss: -2.23%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.20%
+Cumulative gain/loss: -2.51%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   0.764%
+Cumulative gain/loss: -1.83%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.53%
+Cumulative gain/loss: -2.44%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.35%
+Cumulative gain/loss: -2.87%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   0.744%
+Cumulative gain/loss: -2.21%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.20%
+Cumulative gain/loss: -2.49%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.98%
+Cumulative gain/loss: -3.56%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 10.0
+lastPrice/buyPrice:   -0.72%
+Cumulative gain/loss: -4.36%
+SELL order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: None
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: None
+Number of contracts: None
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: None
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+Number of contracts: 0.0
+BUY order executed
+^CTraceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 377, in _make_request
+    httplib_response = conn.getresponse(buffering=True)
+TypeError: getresponse() got an unexpected keyword argument 'buffering'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "auto_trader.py", line 257, in <module>
+    verifyContracts(10)
+  File "auto_trader.py", line 98, in verifyContracts
+    logDataObj = getAccountInfo()
+  File "auto_trader.py", line 142, in getAccountInfo
+    logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
+  File "auto_trader.py", line 176, in execute_request
+    response = requests.get(url, headers=hed)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 480, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 588, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 376, in send
+    timeout=timeout
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 560, in urlopen
+    body=body, headers=headers)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 379, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.5/http/client.py", line 1213, in getresponse
+    response.begin()
+  File "/usr/lib/python3.5/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.5/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.5/ssl.py", line 929, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.5/ssl.py", line 791, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.5/ssl.py", line 575, in read
+    v = self._sslobj.read(len, buffer)
+KeyboardInterrupt
+luke@Hostage-Server:~/Documents/crypto_price_tracker$ 
+

@@ -124,8 +124,9 @@ def getLastPrice():
     logDataObj = logData()
     logDataObj.request_type = "getLastPrice"
     logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
-    logDataObj.lastBaseFEX = getPriceFloat(logDataObj.serverResponseJSON, 'lastPrice')
-    # print(bcolors.ENDC  + "Last price: " + str(logDataObj.lastBaseFEX) + bcolors.ENDC)
+    if not hasattr(logDataObj, 'error'):
+        logDataObj.lastBaseFEX = getPriceFloat(logDataObj.serverResponseJSON, 'lastPrice')
+        # print(bcolors.ENDC  + "Last price: " + str(logDataObj.lastBaseFEX) + bcolors.ENDC)
     upLogs(logDataObj)
     return logDataObj
 
@@ -156,36 +157,57 @@ def getAccountInfo():
 
 #assumes static apiSecret, apiKey
 def execute_request(http_method, url, path, expires, data, logDataObj):
-    #groom data
-    if len(data) != 0:
-        strData = json.dumps(data)
-    else:
-        strData = data
+    try:
+        # raise requests.ConnectionError
+        #condition data
+        if len(data) != 0:
+            strData = json.dumps(data)
+        else:
+            strData = ''
 
-    #create signature
-    tokenString = http_method + path + str(expires) + strData
-    signature = generate_signature(apiSecret, http_method, path, expires, strData)
-    auth_token = signature
-    # print("String: " + tokenString)
-    # print("signature: " + signature)
-    #create header
-    hed = {'api-expires':str(expires),'api-key':apiKey,'api-signature':str(auth_token)}
+        #create signature
+        tokenString = http_method + path + str(expires) + strData
+        signature = generate_signature(apiSecret, http_method, path, expires, strData)
+        auth_token = signature
+        # print("String: " + tokenString)
+        # print("signature: " + signature)
+        #create header
+        hed = {'api-expires':str(expires),'api-key':apiKey,'api-signature':str(auth_token)}
 
-    #fulfill server request
-    if http_method == 'GET':
-        response = requests.get(url, headers=hed)
-    elif http_method == 'POST':
-        response = requests.post(url, headers=hed, json=data)
-    parsedJSON = json.loads(response.text) #whole JSON object
-    # print(bcolors.OKBLUE  + "Server response: " + bcolors.ENDC)
-    # print(json.dumps(parsedJSON, indent=4, sort_keys=True))
-    #log handling
-    logDataObj.timestamp = time.time()
-    logDataObj.string = tokenString
-    logDataObj.signature = signature
-    logDataObj.server_response = json.dumps(parsedJSON, indent=4, sort_keys=True)
-    logDataObj.serverResponseJSON = response
-    return logDataObj
+        #fulfill server request
+        if http_method == 'GET':
+            response = requests.get(url, headers=hed)
+        elif http_method == 'POST':
+            response = requests.post(url, headers=hed, json=data)
+
+        parsedJSON = json.loads(response.text) #whole JSON object
+        # print(bcolors.OKBLUE  + "Server response: " + bcolors.ENDC)
+        # print(json.dumps(parsedJSON, indent=4, sort_keys=True))
+        #log handling
+        logDataObj.timestamp = time.time()
+        logDataObj.string = tokenString
+        logDataObj.signature = signature
+        logDataObj.server_response = json.dumps(parsedJSON, indent=4, sort_keys=True)
+        logDataObj.serverResponseJSON = response
+        return logDataObj
+    except KeyboardInterrupt:
+        exit() #add this in outer layer if you run into trouble: except SystemExit: exit()
+    except:
+        print("------------------ERROR------------------")
+        print(sys.exc_info())
+        print("//////////////////ERROR//////////////////")
+        logDataObj.timestamp = time.time()
+        logDataObj.http_method = http_method
+        logDataObj.url = url
+        logDataObj.path = path
+        logDataObj.expires = expires
+        logDataObj.data = data
+        logDataObj.error = True
+        logDataObj.error_handler = 'execute_request'
+        logDataObj.error_msg = sys.exc_info()
+        return logDataObj
+
+
 
 # The algorithm is: hex(HMAC_SHA256(secret, http_method + path + expires + data))
 # Upper-cased http_method, relative request path, unix timestamp expires.
@@ -234,11 +256,11 @@ else:
 
 initLogs()
 
-#init algorith 0.1
-sumChange = 0.0
-print("Cumulative gain/loss: " + bcolors.OKGREEN + str(sumChange)[:5] + '%' + bcolors.ENDC)
-verifyContracts(0)
-#now contracts==0
+# #init algorith 0.1
+# sumChange = 0.0
+# print("Cumulative gain/loss: " + bcolors.OKGREEN + str(sumChange)[:5] + '%' + bcolors.ENDC)
+# verifyContracts(0)
+# #now contracts==0
 
 
 
@@ -248,77 +270,89 @@ verifyContracts(0)
 #main loop
 while True:
 
-    #loop algorith 0.1
-    sleep(3)
-    logDataObj = getLastPrice()
-    buyPrice = logDataObj.lastBaseFEX
-    logDataObj = placeOrder(10, "MARKET", "BUY")
-    sleep(3)
-    verifyContracts(10)
+    # #loop algorith 0.1
+    # sleep(3)
+    # logDataObj = getLastPrice()
+    # buyPrice = logDataObj.lastBaseFEX
+    # logDataObj = placeOrder(10, "MARKET", "BUY")
+    # sleep(3)
+    # verifyContracts(10)
+    #
+    # trigger = False
+    # while trigger==False:
+    #     sleep(2)
+    #     logDataObj = getLastPrice()
+    #     lastPrice = logDataObj.lastBaseFEX
+    #     if lastPrice/buyPrice > 100.70/100:
+    #         trigger = True
+    #         print("lastPrice/buyPrice:   " + bcolors.OKGREEN + str(lastPrice/buyPrice*100-100)[:5] + '%' + bcolors.ENDC)
+    #         logDataObj = logData()
+    #         logDataObj.timestamp = time.time()
+    #         logDataObj.request_type = "nonrequest, trigger"
+    #         logDataObj.trigger = "greater"
+    #         logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
+    #         sumChange += lastPrice/buyPrice*100-100-0.08
+    #         print("Cumulative gain/loss: " + str(sumChange)[:5] + '%')
+    #         upLogs(logDataObj)
+    #     if lastPrice/buyPrice < 99.80/100:
+    #         trigger = True
+    #         print("lastPrice/buyPrice:   " + bcolors.FAIL + str(lastPrice/buyPrice*100-100)[:5] + '%' + bcolors.ENDC)
+    #         logDataObj = logData()
+    #         logDataObj.timestamp = time.time()
+    #         logDataObj.request_type = "nonrequest, trigger"
+    #         logDataObj.trigger = "lesser"
+    #         logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
+    #         sumChange += lastPrice/buyPrice*100-100-0.08
+    #         print("Cumulative gain/loss: " + str(sumChange)[:5] + '%')
+    #         upLogs(logDataObj)
+    #
+    #
+    # logDataObj = placeOrder(10, "MARKET", "SELL")
+    # sleep(3)
+    # verifyContracts(0)
+    #
+    #
+    # sleep(60)
 
-    trigger = False
-    while trigger==False:
-        sleep(2)
-        logDataObj = getLastPrice()
-        lastPrice = logDataObj.lastBaseFEX
-        if lastPrice/buyPrice > 100.70/100:
-            trigger = True
-            print("lastPrice/buyPrice:   " + bcolors.OKGREEN + str(lastPrice/buyPrice*100-100)[:5] + '%' + bcolors.ENDC)
-            logDataObj = logData()
-            logDataObj.timestamp = time.time()
-            logDataObj.request_type = "nonrequest, trigger"
-            logDataObj.trigger = "greater"
-            logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
-            sumChange += lastPrice/buyPrice*100-100-0.08
-            print("Cumulative gain/loss: " + str(sumChange)[:5] + '%')
-            upLogs(logDataObj)
-        if lastPrice/buyPrice < 99.80/100:
-            trigger = True
-            print("lastPrice/buyPrice:   " + bcolors.FAIL + str(lastPrice/buyPrice*100-100)[:5] + '%' + bcolors.ENDC)
-            logDataObj = logData()
-            logDataObj.timestamp = time.time()
-            logDataObj.request_type = "nonrequest, trigger"
-            logDataObj.trigger = "lesser"
-            logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
-            sumChange += lastPrice/buyPrice*100-100-0.08
-            print("Cumulative gain/loss: " + str(sumChange)[:5] + '%')
-            upLogs(logDataObj)
 
 
-    logDataObj = placeOrder(10, "MARKET", "SELL")
-    sleep(3)
+
+
+
+
+    #run test
     verifyContracts(0)
-
-
-    sleep(60)
-
-
-
-
-
-
-
-    # #run test
-    # logDataObj = getActiveOrderList('BTCUSD') #symbol: BTCUSD, BTCUSDT
-    # # logDataObj = placeOrder(1, "MARKET", "BUY")
-    # # logDataObj = getLastPrice()
+    sleep(2)
+    logDataObj = getLastPrice()
+    sleep(2)
+    # logDataObj = placeOrder(1, "MARKET", "BUY")
+    # logDataObj = getLastPrice()
     # print(logDataObj.server_response)
-    # # #get last price
-    # # logDataObj = getLastPrice()
-    # # # get num of contracts
-    # # logDataObj = getAccountInfo()
-    # # # place order
-    # # placeOrder(size, type, side) #example: 10, "MARKET", "BUY"
-    # # #verifyContracts
-    # # verifyContracts(num)
-    # # #get active order list
-    # # logDataObj = getActiveOrderList(symbol) #symbol: BTCUSD, BTCUSDT
-    # # #check specific order
-    # # logDataObj = checkOrder(id) #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
-    #
-    #
-    #
-    #
+
+
+    #examples:
+
+    # #get last price
+    # logDataObj = getLastPrice()
+
+    # # get num of contracts
+    # logDataObj = getAccountInfo()
+
+    # # place order
+    # placeOrder(size, type, side) #example: 10, "MARKET", "BUY"
+
+    # #verifyContracts
+    # verifyContracts(num)
+
+    # #get active order list
+    # logDataObj = getActiveOrderList(symbol) #symbol: BTCUSD, BTCUSDT
+
+    # #check specific order
+    # logDataObj = checkOrder(id) #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
+
+
+
+
     # exit()
 
 
