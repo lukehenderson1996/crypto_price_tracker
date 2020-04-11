@@ -293,14 +293,15 @@ if os.path.exists('keys/keys.xml'): #file exists
     keysFile.close()
 else:
     print(bcolors.FAIL  + "Error: API keys file does not exist" + bcolors.ENDC)
+    exit()
 
 initLogs()
 
-#init algorith 0.2 (use with USDT)
-sumChangeExp = 0.0
-sumChangeAct = 0.0
-print("Expected cumulative gain/loss: " + bcolors.OKGREEN + str(sumChangeExp)[:5] + '%' + bcolors.ENDC)
-print("Actual gain/loss: " + bcolors.OKGREEN + str(sumChangeAct)[:5] + '%' + bcolors.ENDC)
+# #init algorith 0.2 (use with USDT)
+# sumChangeExp = 0.0
+# sumChangeAct = 0.0
+# print("Expected cumulative gain/loss: " + bcolors.OKGREEN + str(sumChangeExp)[:5] + '%' + bcolors.ENDC)
+# print("Actual gain/loss: " + bcolors.OKGREEN + str(sumChangeAct)[:5] + '%' + bcolors.ENDC)
 
 
 
