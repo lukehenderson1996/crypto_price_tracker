@@ -4,7 +4,7 @@
 import requests, json
 import time
 from time import sleep, localtime, strftime
-import sys
+import sys, traceback
 import os
 from parse import * #pip install parse (or pip3 install parse)
 #from basefex api
@@ -95,7 +95,7 @@ def placeOrder(size, type, side):
 def verifyContracts(num):
     contractsGoalMet = False
     while contractsGoalMet==False:
-        logDataObj = getAccountInfo()
+        logDataObj = getPositionContracts('BTC', 'BTCUSD')
         if not hasattr(logDataObj, 'error'):
             positionContracts = logDataObj.positionContracts
             if not positionContracts is None:
@@ -133,8 +133,8 @@ def getLastPrice():
     upLogs(logDataObj)
     return logDataObj
 
-#GET account info
-def getAccountInfo():
+#GET account value, currency= 'BTC', 'USDT'
+def getCashBalances(currency):
     http_method = 'GET'
     path = '/accounts'
     url = 'https://api.basefex.com' + path
@@ -142,14 +142,43 @@ def getAccountInfo():
     expires = int(round(timestamp) + 5)
     data = '' # empty request body
     logDataObj = logData()
-    logDataObj.request_type = "getAccountInfo"
+    logDataObj.request_type = "getCashBalances"
     logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
     try:
-        positionsDict = json.loads(logDataObj.serverResponseJSON.text)[0]['positions']
+        serverResponseDict = json.loads(logDataObj.serverResponseJSON.text)
+        for i in range(len(serverResponseDict)):
+            if serverResponseDict[i]['cash']['currency']==currency:
+                currencyKey = i
+        logDataObj.cash_balance = json.loads(logDataObj.serverResponseJSON.text)[currencyKey]['cash']['balances']
+    except KeyboardInterrupt:
+        exit()
+    except:
+        logDataObj.cash_balance = None
+    print(bcolors.OKBLUE  + "Cash balance: " + str(logDataObj.cash_balance) + bcolors.ENDC)
+    upLogs(logDataObj)
+    return logDataObj
+
+#GET num of contracts, currency: 'BTC', 'USDT', symbol: 'BTCUSD', 'BTCUSDT'
+def getPositionContracts(currency, symbol):
+    http_method = 'GET'
+    path = '/accounts'
+    url = 'https://api.basefex.com' + path
+    timestamp = time.time()
+    expires = int(round(timestamp) + 5)
+    data = '' # empty request body
+    logDataObj = logData()
+    logDataObj.request_type = "getPositionContracts"
+    logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
+    try:
+        serverResponseDict = json.loads(logDataObj.serverResponseJSON.text)
+        for i in range(len(serverResponseDict)):
+            if serverResponseDict[i]['cash']['currency']==currency:
+                currencyKey = i
+        positionsDict = json.loads(logDataObj.serverResponseJSON.text)[currencyKey]['positions']
         for i in range(len(positionsDict)):
-            if positionsDict[i]['symbol']=="BTCUSD":
-                btcusdKey = i
-        logDataObj.positionContracts = json.loads(logDataObj.serverResponseJSON.text)[0]['positions'][btcusdKey]['size'] #BTC position
+            if positionsDict[i]['symbol']==symbol:
+                symKey = i
+        logDataObj.positionContracts = json.loads(logDataObj.serverResponseJSON.text)[currencyKey]['positions'][symKey]['size'] #BTC or USDT position
     except KeyboardInterrupt:
         exit()
     except:
@@ -177,28 +206,37 @@ def execute_request(http_method, url, path, expires, data, logDataObj):
         #create header
         hed = {'api-expires':str(expires),'api-key':apiKey,'api-signature':str(auth_token)}
 
+        logDataObj.timestamp = time.time()
+        logDataObj.string = tokenString
+        logDataObj.signature = signature
+
         #fulfill server request
         if http_method == 'GET':
             response = requests.get(url, headers=hed)
         elif http_method == 'POST':
             response = requests.post(url, headers=hed, json=data)
 
-        parsedJSON = json.loads(response.text) #whole JSON object
+        logDataObj.response_status_code = response.status_code
+
         # print(bcolors.OKBLUE  + "Server response: " + bcolors.ENDC)
-        # print(json.dumps(parsedJSON, indent=4, sort_keys=True))
-        #log handling
-        logDataObj.timestamp = time.time()
-        logDataObj.string = tokenString
-        logDataObj.signature = signature
-        logDataObj.server_response = json.dumps(parsedJSON, indent=4, sort_keys=True)
+        # print(response.__dict__)
+        # # print(json.dumps(parsedJSON, indent=4, sort_keys=True))
+        # print(bcolors.OKBLUE  + "//Server response//" + bcolors.ENDC)
+
         logDataObj.serverResponseJSON = response
+        logDataObj.RateLimit_Remaining = response.headers['X-RateLimit-Remaining']
+        parsedJSON = json.loads(response.text) #whole JSON object
+        logDataObj.server_response = json.dumps(parsedJSON, indent=4, sort_keys=True)
+
         return logDataObj
     except KeyboardInterrupt:
         exit() #add this in outer layer if you run into trouble: except SystemExit: exit()
     except:
-        print("------------------ERROR------------------")
-        print(sys.exc_info())
-        print("//////////////////ERROR//////////////////")
+        print(bcolors.FAIL  + "------------------ERROR------------------" + bcolors.ENDC)
+        exc_type, exc_value, exc_traceback = sys.exc_info()
+        logDataObj.error_msg = str(traceback.format_exception(exc_type, exc_value, exc_traceback))
+        traceback.print_exc()
+        print(bcolors.FAIL  + "//////////////////ERROR//////////////////" + bcolors.ENDC)
         logDataObj.timestamp = time.time()
         logDataObj.http_method = http_method
         logDataObj.url = url
@@ -207,7 +245,6 @@ def execute_request(http_method, url, path, expires, data, logDataObj):
         logDataObj.data = data
         logDataObj.error = True
         logDataObj.error_handler = 'execute_request'
-        logDataObj.error_msg = sys.exc_info()
         return logDataObj
 
 
@@ -259,12 +296,11 @@ else:
 
 initLogs()
 
-# #init algorith 0.1
-# sumChange = 0.0
-# print("Cumulative gain/loss: " + bcolors.OKGREEN + str(sumChange)[:5] + '%' + bcolors.ENDC)
-# verifyContracts(0)
-# #now contracts==0
-
+#init algorith 0.2 (use with USDT)
+sumChangeExp = 0.0
+sumChangeAct = 0.0
+print("Expected cumulative gain/loss: " + bcolors.OKGREEN + str(sumChangeExp)[:5] + '%' + bcolors.ENDC)
+print("Actual gain/loss: " + bcolors.OKGREEN + str(sumChangeAct)[:5] + '%' + bcolors.ENDC)
 
 
 
@@ -273,49 +309,11 @@ initLogs()
 #main loop
 while True:
 
-    # #loop algorith 0.1
-    # sleep(3)
-    # logDataObj = getLastPrice()
-    # buyPrice = logDataObj.lastBaseFEX
-    # logDataObj = placeOrder(10, "MARKET", "BUY")
-    # sleep(3)
-    # verifyContracts(10)
-    #
-    # trigger = False
-    # while trigger==False:
-    #     sleep(2)
-    #     logDataObj = getLastPrice()
-    #     lastPrice = logDataObj.lastBaseFEX
-    #     if lastPrice/buyPrice > 100.70/100:
-    #         trigger = True
-    #         print("lastPrice/buyPrice:   " + bcolors.OKGREEN + str(lastPrice/buyPrice*100-100)[:5] + '%' + bcolors.ENDC)
-    #         logDataObj = logData()
-    #         logDataObj.timestamp = time.time()
-    #         logDataObj.request_type = "nonrequest, trigger"
-    #         logDataObj.trigger = "greater"
-    #         logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
-    #         sumChange += lastPrice/buyPrice*100-100-0.08
-    #         print("Cumulative gain/loss: " + str(sumChange)[:5] + '%')
-    #         upLogs(logDataObj)
-    #     if lastPrice/buyPrice < 99.80/100:
-    #         trigger = True
-    #         print("lastPrice/buyPrice:   " + bcolors.FAIL + str(lastPrice/buyPrice*100-100)[:5] + '%' + bcolors.ENDC)
-    #         logDataObj = logData()
-    #         logDataObj.timestamp = time.time()
-    #         logDataObj.request_type = "nonrequest, trigger"
-    #         logDataObj.trigger = "lesser"
-    #         logDataObj.last_over_buy_ratio = str(lastPrice/buyPrice*100-100) + '%'
-    #         sumChange += lastPrice/buyPrice*100-100-0.08
-    #         print("Cumulative gain/loss: " + str(sumChange)[:5] + '%')
-    #         upLogs(logDataObj)
-    #
-    #
-    # logDataObj = placeOrder(10, "MARKET", "SELL")
-    # sleep(3)
-    # verifyContracts(0)
-    #
-    #
-    # sleep(60)
+    try:
+
+
+
+        #loop algorith 0.2
 
 
 
@@ -323,40 +321,72 @@ while True:
 
 
 
-    #run test
-    verifyContracts(0)
-    sleep(2)
-    logDataObj = getLastPrice()
-    sleep(2)
-    # logDataObj = placeOrder(1, "MARKET", "BUY")
-    # logDataObj = getLastPrice()
-    # print(logDataObj.server_response)
-
-
-    #examples:
-
-    # #get last price
-    # logDataObj = getLastPrice()
-
-    # # get num of contracts
-    # logDataObj = getAccountInfo()
-
-    # # place order
-    # placeOrder(size, type, side) #example: 10, "MARKET", "BUY"
-
-    # #verifyContracts
-    # verifyContracts(num)
-
-    # #get active order list
-    # logDataObj = getActiveOrderList(symbol) #symbol: BTCUSD, BTCUSDT
-
-    # #check specific order
-    # logDataObj = checkOrder(id) #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
 
 
 
 
-    # exit()
+
+
+        # run test
+        logDataObj = getCashBalances('BTC') #'BTC', 'USDT'
+        logDataObj = getCashBalances('USDT') #'BTC', 'USDT'
+        logDataObj = getLastPrice()
+        sleep(1)
+        logDataObj = getPositionContracts('BTC', 'BTCUSD') #'BTC', 'BTCUSD' or 'USDT', 'BTCUSDT'
+        logDataObj = getPositionContracts('USDT', 'BTCUSDT') #'BTC', 'BTCUSD' or 'USDT', 'BTCUSDT'
+        logDataObj = getActiveOrderList('BTCUSD') #symbol: BTCUSD, BTCUSDT
+        sleep(1)
+        logDataObj = getActiveOrderList('BTCUSDT') #symbol: BTCUSD, BTCUSDT
+        logDataObj = checkOrder('5c55eeea-959a-4bcd-0005-fcbf01ba8a44') #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
+        sleep(1)
+        # print(logDataObj.server_response)
+
+
+        #examples:
+
+        # #get last price
+        # logDataObj = getLastPrice()
+
+        # # get cash balance
+        # logDataObj = getCashBalances('BTC') #'BTC', 'USDT'
+
+        # # get num of contracts
+        # logDataObj = getPositionContracts('USDT', 'BTCUSDT') #'BTC', 'BTCUSD' or 'USDT', 'BTCUSDT'
+
+        # # place order
+        # placeOrder(size, type, side) #example: 10, "MARKET", "BUY"
+
+        # #verifyContracts
+        # verifyContracts(num)
+
+        # #get active order list
+        # logDataObj = getActiveOrderList(symbol) #symbol: BTCUSD, BTCUSDT
+
+        # #check specific order
+        # logDataObj = checkOrder(id) #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
+
+
+
+
+        # exit()
+
+    #outer error handling:
+    except KeyboardInterrupt:
+        exit()
+    except SystemExit:
+        # print(bcolors.WARNING  + " Reached outer 'except SystemExit:'")
+        exit()
+    except:
+        print(bcolors.FAIL  + "------------------ERROR(outer layer)------------------" + bcolors.ENDC)
+        exc_type, exc_value, exc_traceback = sys.exc_info()
+        traceback.print_exc()
+        print(bcolors.FAIL  + "//////////////////ERROR(outer layer)//////////////////" + bcolors.ENDC)
+        exit()
+
+
+
+
+
 
 
 
