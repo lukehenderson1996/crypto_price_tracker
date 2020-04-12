@@ -61,12 +61,49 @@ def checkOrder(id): #Get order information by order id
     logDataObj.request_type = "checkOrder"
     logDataObj.id = id
     logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
+    logDataObj.filled = json.loads(logDataObj.serverResponseJSON.text)['filled']
+    if logDataObj.filled!=0:
+        logDataObj.excPrice = json.loads(logDataObj.serverResponseJSON.text)['avgPrice']
+    else:
+        logDataObj.excPrice = None
     upLogs(logDataObj)
     return logDataObj
 
 
-#POST order buy/sell
-def placeOrder(size, type, side):
+#POST USDT order buy/sell
+def placeOrderUSDT(size, type, side, price):
+    http_method = 'POST'
+    path = '/orders'
+    url = 'https://api.basefex.com' + path
+    timestamp = time.time()
+    expires = int(round(timestamp) + 5)
+    if price==None:
+        data = {
+            "size": size,
+            "symbol": "BTCUSDT",
+            "type": type,
+            "side": side,
+            }
+    else:
+        data = {
+            "size": size,
+            "symbol": "BTCUSDT",
+            "type": type,
+            "side": side,
+            "price": price
+            }
+
+    logDataObj = logData()
+    logDataObj.request_type = "placeOrderBTC-" + side
+    logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
+    logDataObj.orderID = json.loads(logDataObj.serverResponseJSON.text)['id']
+    print(bcolors.OKBLUE  + side + " order executed" + bcolors.ENDC)
+    upLogs(logDataObj)
+    return logDataObj
+
+
+#POST BTC order buy/sell
+def placeOrderBTC(size, type, side):
     http_method = 'POST'
     path = '/orders'
     url = 'https://api.basefex.com' + path
@@ -85,7 +122,7 @@ def placeOrder(size, type, side):
         "side": side
         }
     logDataObj = logData()
-    logDataObj.request_type = side
+    logDataObj.request_type = "placeOrderBTC-" + side
     logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
     print(bcolors.OKBLUE  + side + " order executed" + bcolors.ENDC)
     upLogs(logDataObj)
@@ -103,9 +140,9 @@ def verifyContracts(num):
                     contractsGoalMet = True
                 elif positionContracts != num:
                     if positionContracts > num:
-                        logDataObj = placeOrder(positionContracts-num, "MARKET", "SELL")
+                        logDataObj = placeOrderBTC(positionContracts-num, "MARKET", "SELL")
                     elif positionContracts < num:
-                        logDataObj = placeOrder(num-positionContracts, "MARKET", "BUY")
+                        logDataObj = placeOrderBTC(num-positionContracts, "MARKET", "BUY")
                     sleep(3)
             else:
                 sleep(2)
@@ -116,7 +153,7 @@ def verifyContracts(num):
 
 
 
-#GET last price
+#GET last price,
 def getLastPrice():
     http_method = 'GET'
     path = '/depth@BTCUSD/snapshot'
@@ -129,7 +166,11 @@ def getLastPrice():
     logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
     if not hasattr(logDataObj, 'error'):
         logDataObj.lastBaseFEX = getPriceFloat(logDataObj.serverResponseJSON, 'lastPrice')
+        logDataObj.highestBidBaseFEX = getPriceFloat(logDataObj.serverResponseJSON, 'bestPrices', 'bid')
         # print(bcolors.ENDC  + "Last price: " + str(logDataObj.lastBaseFEX) + bcolors.ENDC)
+    else:
+        logDataObj.lastBaseFEX = None
+        logDataObj.highestBidBaseFEX = None
     upLogs(logDataObj)
     return logDataObj
 
@@ -329,33 +370,31 @@ while True:
 
 
         # run test
-        logDataObj = getCashBalances('BTC') #'BTC', 'USDT'
-        logDataObj = getCashBalances('USDT') #'BTC', 'USDT'
-        logDataObj = getLastPrice()
-        sleep(1)
-        logDataObj = getPositionContracts('BTC', 'BTCUSD') #'BTC', 'BTCUSD' or 'USDT', 'BTCUSDT'
-        logDataObj = getPositionContracts('USDT', 'BTCUSDT') #'BTC', 'BTCUSD' or 'USDT', 'BTCUSDT'
-        logDataObj = getActiveOrderList('BTCUSD') #symbol: BTCUSD, BTCUSDT
-        sleep(1)
-        logDataObj = getActiveOrderList('BTCUSDT') #symbol: BTCUSD, BTCUSDT
-        logDataObj = checkOrder('5c55eeea-959a-4bcd-0005-fcbf01ba8a44') #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
-        sleep(1)
-        # print(logDataObj.server_response)
+        # todo: verify contracts: if an order doesnt get filled, what to do?
+        #then, after all is filled and gone as planned, check that there are no active orders AND that the number of contracts is what was expected (if not, adjust and go back to step one)
+        #
+
+
+        print(logDataObj.server_response)
+        # print(bcolors.OKBLUE + str(json.loads(logDataObj.serverResponseJSON.text)['filled']) + bcolors.ENDC)
+        # print(logDataObj.filled)
 
 
         #examples:
 
         # #get last price
-        # logDataObj = getLastPrice()
+        # logDataObj = getLastPrice() #gives logDataObj.lastBaseFEX and logDataObj.highestBidBaseFEX
 
-        # # get cash balance
+        # #get cash balance
         # logDataObj = getCashBalances('BTC') #'BTC', 'USDT'
 
-        # # get num of contracts
+        # #get num of contracts
         # logDataObj = getPositionContracts('USDT', 'BTCUSDT') #'BTC', 'BTCUSD' or 'USDT', 'BTCUSDT'
 
-        # # place order
-        # placeOrder(size, type, side) #example: 10, "MARKET", "BUY"
+        # #place order
+        # logDataObj = placeOrderBTC(size, type, side) #example: 10, "MARKET", "BUY"
+        # logDataObj = placeOrderUSDT(1, "LIMIT", "BUY", 1000) #example: 1, "MARKET", "SELL", None      or      1, "LIMIT", "BUY", 8000
+        # #produces logDataObj.orderID
 
         # #verifyContracts
         # verifyContracts(num)
@@ -365,11 +404,12 @@ while True:
 
         # #check specific order
         # logDataObj = checkOrder(id) #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
+        # #produces logDataObj.filled, logDataObj.excPrice (execution price)
 
 
 
 
-        # exit()
+        exit()
 
     #outer error handling:
     except KeyboardInterrupt:
