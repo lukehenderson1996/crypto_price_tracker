@@ -26,6 +26,9 @@ class logData:
   #server_response_simplified
   #server_response
 
+class logDataErrVfctn:
+    error = True
+
 
 
 #init loggers

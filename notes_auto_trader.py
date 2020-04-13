@@ -1,3 +1,80 @@
+#error handling convention:
+
+
+
+try:
+    pass
+except KeyboardInterrupt:
+    exit() #add this in outer layer if you run into trouble: except SystemExit: exit()
+except:
+    print(bcolors.FAIL  + "------------------ERROR------------------" + bcolors.ENDC)
+    exc_type, exc_value, exc_traceback = sys.exc_info()
+    logDataObj.error_msg = str(traceback.format_exception(exc_type, exc_value, exc_traceback))
+    traceback.print_exc()
+    print(bcolors.FAIL  + "//////////////////ERROR//////////////////" + bcolors.ENDC)
+    logDataObj.error = True
+    logDataObj.error_functionName = True
+    return logDataObj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # #static debugging example
 # apiKey = '5afd4095-f1fb-41d0-0005-1a0048ffe468'            # id of api key example from baseFEX
 # apiSecret = 'OJJFq6qugIyvLBOyvg8WBPriSs0Dfw7Mi3QjLYin8is=' # api secret example from baseFEX

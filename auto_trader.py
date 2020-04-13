@@ -39,7 +39,7 @@ def getActiveOrderList(symbol): #symbol: BTCUSD, BTCUSDT
     path = '/orders/opening?symbol=' + symbol
     url = 'https://api.basefex.com' + path
     timestamp = time.time()
-    expires = int(round(timestamp) + 5)
+    expires = int(round(timestamp) + 30)
     data = '' # empty request body
     logDataObj = logData()
     logDataObj.request_type = "getActiveOrderList"
@@ -55,7 +55,7 @@ def checkOrder(id): #Get order information by order id
     path = '/orders/' + id
     url = 'https://api.basefex.com' + path
     timestamp = time.time()
-    expires = int(round(timestamp) + 5)
+    expires = int(round(timestamp) + 30)
     data = '' # empty request body
     logDataObj = logData()
     logDataObj.request_type = "checkOrder"
@@ -72,34 +72,53 @@ def checkOrder(id): #Get order information by order id
 
 #POST USDT order buy/sell
 def placeOrderUSDT(size, type, side, price):
-    http_method = 'POST'
-    path = '/orders'
-    url = 'https://api.basefex.com' + path
-    timestamp = time.time()
-    expires = int(round(timestamp) + 5)
-    if price==None:
-        data = {
-            "size": size,
-            "symbol": "BTCUSDT",
-            "type": type,
-            "side": side,
-            }
-    else:
-        data = {
-            "size": size,
-            "symbol": "BTCUSDT",
-            "type": type,
-            "side": side,
-            "price": price
-            }
+    try:
+        http_method = 'POST'
+        path = '/orders'
+        url = 'https://api.basefex.com' + path
+        timestamp = time.time()
+        expires = int(round(timestamp) + 30)
+        if price == None:
+            data = {
+                "size": size,
+                "symbol": "BTCUSDT",
+                "type": type,
+                "side": side,
+                }
+        else:
+            data = {
+                "size": size,
+                "symbol": "BTCUSDT",
+                "type": type,
+                "side": side,
+                "price": price
+                }
 
-    logDataObj = logData()
-    logDataObj.request_type = "placeOrderBTC-" + side
-    logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
-    logDataObj.orderID = json.loads(logDataObj.serverResponseJSON.text)['id']
-    print(bcolors.OKBLUE  + side + " order executed" + bcolors.ENDC)
-    upLogs(logDataObj)
-    return logDataObj
+        logDataObj = logData()
+        logDataObj.request_type = "placeOrderUSDT-" + side
+        logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
+        if not hasattr(logDataObj, 'error'):
+            logDataObj.orderID = None#json.loads(logDataObj.serverResponseJSON.text)['id']
+        else:
+            logDataObj.orderID == None
+        print(bcolors.OKBLUE  + side + " order executed" + bcolors.ENDC)
+        upLogs(logDataObj)
+        return logDataObj
+    except KeyboardInterrupt:
+        exit() #add this in outer layer if you run into trouble: except SystemExit: exit()
+    except:
+        print(bcolors.FAIL  + "------------------ERROR------------------" + bcolors.ENDC)
+        exc_type, exc_value, exc_traceback = sys.exc_info()
+        logDataObj.error_msg = str(traceback.format_exception(exc_type, exc_value, exc_traceback))
+        traceback.print_exc()
+        print(bcolors.FAIL  + "//////////////////ERROR//////////////////" + bcolors.ENDC)
+        logDataObj.error = True
+        logDataObj.error_placeOrderUSDT = True
+        logDataObj.request_type = "placeOrderUSDT-" + side
+        logDataObj.orderID == None
+        upLogs(logDataObj)
+        return logDataObj
+
 
 
 #POST BTC order buy/sell
@@ -108,7 +127,7 @@ def placeOrderBTC(size, type, side):
     path = '/orders'
     url = 'https://api.basefex.com' + path
     timestamp = time.time()
-    expires = int(round(timestamp) + 5)
+    expires = int(round(timestamp) + 30)
     # data = {
     #     "size": 5,
     #     "symbol": "BTCUSD",
@@ -135,7 +154,7 @@ def verifyContracts(num):
         logDataObj = getPositionContracts('BTC', 'BTCUSD')
         if not hasattr(logDataObj, 'error'):
             positionContracts = logDataObj.positionContracts
-            if not positionContracts is None:
+            if not positionContracts == None:
                 if positionContracts==num:
                     contractsGoalMet = True
                 elif positionContracts != num:
@@ -159,7 +178,7 @@ def getLastPrice():
     path = '/depth@BTCUSD/snapshot'
     url = 'https://api.basefex.com' + path
     timestamp = time.time()
-    expires = int(round(timestamp) + 5)
+    expires = int(round(timestamp) + 30)
     data = '' # empty request body
     logDataObj = logData()
     logDataObj.request_type = "getLastPrice"
@@ -180,7 +199,7 @@ def getCashBalances(currency):
     path = '/accounts'
     url = 'https://api.basefex.com' + path
     timestamp = time.time()
-    expires = int(round(timestamp) + 5)
+    expires = int(round(timestamp) + 30)
     data = '' # empty request body
     logDataObj = logData()
     logDataObj.request_type = "getCashBalances"
@@ -205,7 +224,7 @@ def getPositionContracts(currency, symbol):
     path = '/accounts'
     url = 'https://api.basefex.com' + path
     timestamp = time.time()
-    expires = int(round(timestamp) + 5)
+    expires = int(round(timestamp) + 30)
     data = '' # empty request body
     logDataObj = logData()
     logDataObj.request_type = "getPositionContracts"
@@ -253,21 +272,22 @@ def execute_request(http_method, url, path, expires, data, logDataObj):
 
         #fulfill server request
         if http_method == 'GET':
-            response = requests.get(url, headers=hed)
+            response = requests.get(url, headers=hed, timeout=5)
         elif http_method == 'POST':
-            response = requests.post(url, headers=hed, json=data)
-
-        logDataObj.response_status_code = response.status_code
+            response = requests.post(url, headers=hed, json=data, timeout=5)
 
         # print(bcolors.OKBLUE  + "Server response: " + bcolors.ENDC)
         # print(response.__dict__)
         # # print(json.dumps(parsedJSON, indent=4, sort_keys=True))
         # print(bcolors.OKBLUE  + "//Server response//" + bcolors.ENDC)
 
+        logDataObj.response_status_code = response.status_code
         logDataObj.serverResponseJSON = response
-        logDataObj.RateLimit_Remaining = response.headers['X-RateLimit-Remaining']
         parsedJSON = json.loads(response.text) #whole JSON object
         logDataObj.server_response = json.dumps(parsedJSON, indent=4, sort_keys=True)
+        if not response.status_code == 200:
+            raise requests.HTTPError
+        logDataObj.RateLimit_Remaining = response.headers['X-RateLimit-Remaining']
 
         return logDataObj
     except KeyboardInterrupt:
@@ -285,7 +305,7 @@ def execute_request(http_method, url, path, expires, data, logDataObj):
         logDataObj.expires = expires
         logDataObj.data = data
         logDataObj.error = True
-        logDataObj.error_handler = 'execute_request'
+        logDataObj.error_execute_request = True
         return logDataObj
 
 
@@ -360,19 +380,54 @@ while True:
 
 
 
-
-
-
-
-
-
+        # logDataObj = placeOrderUSDT(1, "LIMIT", "BUY", 1000)
+        logDataObj = getActiveOrderList('BTCUSDT')
+        serverResponseDict = json.loads(logDataObj.serverResponseJSON.text)
+        print(len(serverResponseDict))
+        # print(logDataObj.server_response)
+        exit()
 
 
 
         # run test
-        # todo: verify contracts: if an order doesnt get filled, what to do?
+        # todo:placeOrderUSDT now has error control, put that in every function next!
+        # todo:make logV parser with input('what file to parse?') and input('what tag to parse?') and input('what value to parse?'), but save the whole entry if it includes that tag/value
+        #      and then make a version where it doesnt include the tag/value?
+        # verify contracts: if an order doesnt get filled, what to do?
         #then, after all is filled and gone as planned, check that there are no active orders AND that the number of contracts is what was expected (if not, adjust and go back to step one)
-        #
+        orderPlaced = False
+        while orderPlaced == False:
+            logDataObj = placeOrderUSDT(1, "LIMIT", "BUY", 1000) #example: 1, "MARKET", "SELL", None      or      1, "LIMIT", "BUY", 8000
+            if not logDataObj.orderID == None:
+                orderPlaced = True
+            else:
+                #wait a second and check on active orders, to see if it went through
+                #UPDATE THIS: if the order did go through, it's probably already filled, so check position contracts.
+                sleep(10)
+                # logDataObj = logDataErrVfctn()
+                # while hasattr(logDataObj, 'error'):
+                #     logDataObj = getActiveOrderList('BTCUSDT')
+                # #if the order did not go through
+                # serverResponseDict = json.loads(logDataObj.serverResponseJSON.text)
+                # print(len(serverResponseDict))
+                # if len(serverResponseDict)==0:
+                #     pass
+                # #if the order did go through
+                # elif len(serverResponseDict)==1:
+                #     #save order id
+                #     orderPlaced = True
+                # #if the program lost track of how many orders, or an order was doubled
+                # else:
+                #     print(bcolors.FAIL  + "Error: Number of orders = " + str(len(serverResponseDict)) + bcolors.ENDC)
+                #     exit()
+
+        #check to see if it's filled
+        logDataObj = checkOrder(logDataObj.orderID) #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
+        #produces logDataObj.filled, logDataObj.excPrice (execution price)
+
+        #...
+
+
 
 
         print(logDataObj.server_response)
