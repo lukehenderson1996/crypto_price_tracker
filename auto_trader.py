@@ -344,6 +344,7 @@ def getLastPrice():
         if not hasattr(logDataObj, 'error'):
             logDataObj.lastBaseFEX = getPriceFloat(logDataObj.serverResponseJSON, 'lastPrice')
             logDataObj.highestBidBaseFEX = getPriceFloat(logDataObj.serverResponseJSON, 'bestPrices', 'bid')
+            logDataObj.lowestAskBaseFEX = getPriceFloat(logDataObj.serverResponseJSON, 'bestPrices', 'ask')
             # print(bcolors.ENDC  + "Last price: " + str(logDataObj.lastBaseFEX) + bcolors.ENDC)
         else:
             logDataObj.lastBaseFEX = None
@@ -624,7 +625,14 @@ while True:
         buyTrigger = False
         while buyTrigger==False:
             #conditions if which it becomes desirable to buy, set buyTrigger
-            buyTrigger = True #assuming it's always favorable enough
+            logDataObj = logDataErrVfctn()
+            while hasattr(logDataObj, 'error'):
+                logDataObj = getLastPrice()
+            askOverBid = logDataObj.lowestAskBaseFEX/logDataObj.highestBidBaseFEX
+            #veryify that there's no huge discrepency between ask and bid
+            #at $7000, .035% more is 7002.45
+            if askOverBid < 100.035/100:
+                buyTrigger = True
         #exeute the buy-------------------------------------------------------------
         logDataObj = logDataErrVfctn()
         while hasattr(logDataObj, 'error'):
@@ -721,11 +729,9 @@ while True:
 
 
         # run test
-
-
         # print(logDataObj.server_response)
         # print(bcolors.OKBLUE + str(json.loads(logDataObj.serverResponseJSON.text)['filled']) + bcolors.ENDC)
-        # print(logDataObj.filled)
+        print(logDataObj.lowestAskBaseFEX)
         # exit()
 
     #outer error handling:
