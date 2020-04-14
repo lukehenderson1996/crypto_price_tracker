@@ -642,7 +642,12 @@ while True:
                 logDataObj = getLastPrice()
             buyPrice = logDataObj.highestBidBaseFEX
         print(bcolors.OKBLUE  + "Buy  order executed at $" + str(buyPrice) + bcolors.ENDC)
-        #now we have bought it at price buyPrice, no errors
+        #get meta
+        logDataObj = logDataErrVfctn()
+        while hasattr(logDataObj, 'error'):
+            logDataObj = getLastPrice()
+        bidDuringBuy = logDataObj.highestBidBaseFEX
+        #now we have bought it at price buyPrice and gotten bidDuringBuy, no errors
 
 
         sleep(2)
@@ -654,7 +659,7 @@ while True:
             logDataObj = logDataErrVfctn()
             while hasattr(logDataObj, 'error'):
                 logDataObj = getLastPrice()
-            bidOverBuy = logDataObj.highestBidBaseFEX/buyPrice
+            bidOverBuy = logDataObj.highestBidBaseFEX/bidDuringBuy
             if bidOverBuy > 100.70/100:
                 print(bcolors.OKBLUE  + '+0.7% expected' + bcolors.ENDC)
                 sellTrigger = True
