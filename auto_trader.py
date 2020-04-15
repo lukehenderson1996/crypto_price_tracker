@@ -27,6 +27,7 @@ class bcolors:
 
 
 C_TO_TRD = 1 #contracts to trade with constant
+RATE_LIMIT_SLEEP = 0.33 #180 per minute -> 1 call per 0.33 secondsy
 
 
 #wait until order get filled
@@ -627,6 +628,7 @@ while True:
             #conditions if which it becomes desirable to buy, set buyTrigger
             logDataObj = logDataErrVfctn()
             while hasattr(logDataObj, 'error'):
+                sleep(RATE_LIMIT_SLEEP)
                 logDataObj = getLastPrice()
             askOverBid = logDataObj.lowestAskBaseFEX/logDataObj.highestBidBaseFEX
             #veryify that there's no huge discrepency between ask and bid
@@ -658,14 +660,14 @@ while True:
         #now we have bought it at price buyPrice and gotten bidDuringBuy, no errors
 
 
-        sleep(2)
+        sleep(RATE_LIMIT_SLEEP)
 
         sellTrigger = False
         while sellTrigger==False:
             #conditions if which it becomes desirable to sell, set sellTrigger
-            sleep(2)
             logDataObj = logDataErrVfctn()
             while hasattr(logDataObj, 'error'):
+                sleep(RATE_LIMIT_SLEEP)
                 logDataObj = getLastPrice()
             bidOverBuy = logDataObj.highestBidBaseFEX/bidDuringBuy
             if bidOverBuy > 100.70/100:
