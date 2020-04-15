@@ -62,7 +62,7 @@ def verifyTriggerOrderUSDT():
 def verifyOrderUSDT(size, side, price): #C_TO_TRD, "BUY", 1000
 #gives logDataObj.orderID
 
-#get last price
+#get last price, !!!! USDT ONLY !!!!
 logDataObj = getLastPrice()
 #gives logDataObj.lastBaseFEX and logDataObj.highestBidBaseFEX
 

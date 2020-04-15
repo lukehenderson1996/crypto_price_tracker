@@ -333,7 +333,7 @@ def verifyContracts(num):
 def getLastPrice():
     try:
         http_method = 'GET'
-        path = '/depth@BTCUSD/snapshot'
+        path = '/depth@BTCUSDT/snapshot'
         url = 'https://api.basefex.com' + path
         timestamp = time.time()
         expires = int(round(timestamp) + 30)
