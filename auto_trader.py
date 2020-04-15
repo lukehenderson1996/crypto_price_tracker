@@ -731,7 +731,7 @@ while True:
         # run test
         # print(logDataObj.server_response)
         # print(bcolors.OKBLUE + str(json.loads(logDataObj.serverResponseJSON.text)['filled']) + bcolors.ENDC)
-        print(logDataObj.lowestAskBaseFEX)
+        # print(logDataObj.lowestAskBaseFEX)
         # exit()
 
     #outer error handling:
