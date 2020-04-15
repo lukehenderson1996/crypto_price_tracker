@@ -350,6 +350,11 @@ def getLastPrice():
         else:
             logDataObj.lastBaseFEX = None
             logDataObj.highestBidBaseFEX = None
+            logDataObj.lowestAskBaseFEX = None
+        if logDataObj.lastBaseFEX==None or logDataObj.highestBidBaseFEX==None or logDataObj.lowestAskBaseFEX==None:
+            logDataObj.error = True
+            logDataObj.error_getLastPrice = True
+            logDataObj.error_msg = 'Internal error: One or more prices was of NoneType'
         upLogs(logDataObj)
         return logDataObj
     except KeyboardInterrupt:
@@ -538,14 +543,17 @@ def generate_signature(apiSecret, http_method, path, expires, strData):
 def getPriceFloat(*args): #num of args will be 2 to 5 -> 0:JSON object, 1:Key0, 2:[Key1], 3:[Key2], 4:[Key3]
     try:
         if len(args) == 2:
-            priceFloat = float(json.loads(args[0].text)[args[1]])
+            priceText = json.loads(args[0].text)[args[1]]
         elif len(args) == 3:
-            priceFloat = float(json.loads(args[0].text)[args[1]][args[2]])
+            priceText = json.loads(args[0].text)[args[1]][args[2]]
         elif len(args) == 4:
-            priceFloat = float(json.loads(args[0].text)[args[1]][args[2]][args[3]])
+            priceText = json.loads(args[0].text)[args[1]][args[2]][args[3]]
         else:
-            priceFloat = float(json.loads(args[0].text)[args[1]][args[2]][args[3]][args[4]])
-        return priceFloat
+            priceText = json.loads(args[0].text)[args[1]][args[2]][args[3]][args[4]]
+        if not priceText == None:
+            return float(priceText)
+        else:
+            return None
     except KeyboardInterrupt:
         exit() #add this in outer layer if you run into trouble: except SystemExit: exit()
     except:
