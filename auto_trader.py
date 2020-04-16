@@ -701,15 +701,15 @@ while True:
                 sellTrigger = True
         #execute the sell-----------------------------------------------------------
         tryPrice = round(logDataObj.highestBidBaseFEX*0.98*2)/2
-                #ORDER STATUS
-                orderStatusFilled = False
-                while orderStatusFilled==False:
-                    logDataObj = verifyOrderUSDT(C_TO_TRD, "SELL", tryPrice)
-                    logDataObj = waitUntilOrderFill(logDataObj.orderID)
-                    if logDataObj.orderStatus=='REJECTED':
-                        pass
-                    else:
-                        orderStatusFilled = True
+        #ORDER STATUS
+        orderStatusFilled = False
+        while orderStatusFilled==False:
+            logDataObj = verifyOrderUSDT(C_TO_TRD, "SELL", tryPrice)
+            logDataObj = waitUntilOrderFill(logDataObj.orderID)
+            if logDataObj.orderStatus=='REJECTED':
+                pass
+            else:
+                orderStatusFilled = True
         excPrice = logDataObj.excPrice
         if not excPrice==None:
             sellPrice = excPrice
