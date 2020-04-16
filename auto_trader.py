@@ -41,6 +41,11 @@ def waitUntilOrderFill(id): #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
             if logDataObj.filled == C_TO_TRD:
                 # excPrice = logDataObj.excPrice #not needed because check order is the only API call in here
                 orderFilledFlag = True
+            elif logDataObj.orderStatus=='REJECTED':
+                logDataObj.error = True
+                logDataObj.error_waitUntilOrderFill = True
+                logDataObj.error_msg = 'Internal error: orderStatus is REJECTED '
+                return logDataObj
             elif logDataObj.filled == 0:
                 pass
             else:
@@ -167,6 +172,7 @@ def checkOrder(id): #Get order information by order id
         logDataObj.id = id
         logDataObj = execute_request(http_method, url, path, expires, data, logDataObj)
         logDataObj.filled = json.loads(logDataObj.serverResponseJSON.text)['filled']
+        logDataObj.orderStatus = json.loads(logDataObj.serverResponseJSON.text)['status']
         if logDataObj.filled!=0:
             logDataObj.excPrice = json.loads(logDataObj.serverResponseJSON.text)['avgPrice']
         else:
@@ -590,7 +596,7 @@ else:
 
 initLogs()
 
-# #init algorith 0.2 (use with USDT)
+#init algorith 0.2 (use with USDT)
 logDataObj = logDataErrVfctn()
 while hasattr(logDataObj, 'error'):
     logDataObj = getPositionContracts('USDT', 'BTCUSDT')
@@ -652,8 +658,15 @@ while True:
         while hasattr(logDataObj, 'error'):
             logDataObj = getLastPrice()
         tryPrice = round(logDataObj.highestBidBaseFEX*1.02*2)/2
-        logDataObj = verifyOrderUSDT(C_TO_TRD, "BUY", tryPrice)
-        logDataObj = waitUntilOrderFill(logDataObj.orderID)
+        #ORDER STATUS
+        orderStatusFilled = False
+        while orderStatusFilled==False:
+            logDataObj = verifyOrderUSDT(C_TO_TRD, "BUY", tryPrice)
+            logDataObj = waitUntilOrderFill(logDataObj.orderID)
+            if logDataObj.orderStatus=='REJECTED':
+                pass
+            else:
+                orderStatusFilled = True
         excPrice = logDataObj.excPrice
         if not excPrice==None:
             buyPrice = excPrice
@@ -688,8 +701,15 @@ while True:
                 sellTrigger = True
         #execute the sell-----------------------------------------------------------
         tryPrice = round(logDataObj.highestBidBaseFEX*0.98*2)/2
-        logDataObj = verifyOrderUSDT(C_TO_TRD, "SELL", tryPrice)
-        logDataObj = waitUntilOrderFill(logDataObj.orderID)
+                #ORDER STATUS
+                orderStatusFilled = False
+                while orderStatusFilled==False:
+                    logDataObj = verifyOrderUSDT(C_TO_TRD, "SELL", tryPrice)
+                    logDataObj = waitUntilOrderFill(logDataObj.orderID)
+                    if logDataObj.orderStatus=='REJECTED':
+                        pass
+                    else:
+                        orderStatusFilled = True
         excPrice = logDataObj.excPrice
         if not excPrice==None:
             sellPrice = excPrice
@@ -740,10 +760,16 @@ while True:
 
 
 
-        # run test
-        # print(logDataObj.server_response)
-        # print(bcolors.OKBLUE + str(json.loads(logDataObj.serverResponseJSON.text)['filled']) + bcolors.ENDC)
-        # print(logDataObj.lowestAskBaseFEX)
+        # #run test
+        #
+        # #check specific order
+        # logDataObj = checkOrder('5c60286f-96b8-4e29-0005-8887213b34b3') #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
+        # #gives logDataObj.filled, logDataObj.excPrice (execution price)
+        #
+        #
+        # #print(logDataObj.server_response)
+        # #print(bcolors.OKBLUE + str(json.loads(logDataObj.serverResponseJSON.text)['filled']) + bcolors.ENDC)
+        # print(logDataObj.status)
         # exit()
 
     #outer error handling:
