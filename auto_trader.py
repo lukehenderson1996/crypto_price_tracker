@@ -27,7 +27,7 @@ class bcolors:
 
 
 C_TO_TRD = 1 #contracts to trade with constant
-RATE_LIMIT_SLEEP = 0.33 #180 per minute -> 1 call per 0.33 secondsy
+RATE_LIMIT_SLEEP = 0.38 #180 per minute -> 1 call per 0.33 secondsy
 
 
 #wait until order get filled
@@ -116,6 +116,7 @@ def verifyOrderUSDT(size, side, price): #example C_TO_TRD, "BUY", 1000
 
 def getActiveOrderList(symbol): #symbol: BTCUSD, BTCUSDT
     try:
+        sleep(RATE_LIMIT_SLEEP)
         http_method = 'GET'
         #path helper: https://api.basefex.com/orders?symbol=BTCUSD&type=LIMIT&side=BUY&status=NEW&limit=30
         path = '/orders/opening?symbol=' + symbol
@@ -153,6 +154,7 @@ def getActiveOrderList(symbol): #symbol: BTCUSD, BTCUSDT
 
 def checkOrder(id): #Get order information by order id
     try:
+        sleep(RATE_LIMIT_SLEEP)
         http_method = 'GET'
         #path helper: https://api.basefex.com/orders?symbol=BTCUSD&type=LIMIT&side=BUY&status=NEW&limit=30
         path = '/orders/' + id
@@ -333,6 +335,7 @@ def verifyContracts(num):
 #GET last price,
 def getLastPrice():
     try:
+        sleep(RATE_LIMIT_SLEEP)
         http_method = 'GET'
         path = '/depth@BTCUSDT/snapshot'
         url = 'https://api.basefex.com' + path
@@ -376,6 +379,7 @@ def getLastPrice():
 #GET account value, currency= 'BTC', 'USDT'
 def getCashBalances(currency):
     try:
+        sleep(RATE_LIMIT_SLEEP)
         http_method = 'GET'
         path = '/accounts'
         url = 'https://api.basefex.com' + path
@@ -416,6 +420,7 @@ def getCashBalances(currency):
 #GET num of contracts, currency: 'BTC', 'USDT', symbol: 'BTCUSD', 'BTCUSDT'
 def getPositionContracts(currency, symbol):
     try:
+        sleep(RATE_LIMIT_SLEEP)
         http_method = 'GET'
         path = '/accounts'
         url = 'https://api.basefex.com' + path
@@ -618,7 +623,7 @@ logDataObj = logDataErrVfctn()
 while hasattr(logDataObj, 'error'):
     logDataObj = getCashBalances('USDT')
 print(bcolors.OKBLUE  + "Starting cash balance: $" + str(logDataObj.cash_balance) + bcolors.ENDC)
-sleep(2)
+
 
 
 
@@ -636,7 +641,6 @@ while True:
             #conditions if which it becomes desirable to buy, set buyTrigger
             logDataObj = logDataErrVfctn()
             while hasattr(logDataObj, 'error'):
-                sleep(RATE_LIMIT_SLEEP)
                 logDataObj = getLastPrice()
             askOverBid = logDataObj.lowestAskBaseFEX/logDataObj.highestBidBaseFEX
             #veryify that there's no huge discrepency between ask and bid
@@ -668,14 +672,12 @@ while True:
         #now we have bought it at price buyPrice and gotten bidDuringBuy, no errors
 
 
-        sleep(RATE_LIMIT_SLEEP)
 
         sellTrigger = False
         while sellTrigger==False:
             #conditions if which it becomes desirable to sell, set sellTrigger
             logDataObj = logDataErrVfctn()
             while hasattr(logDataObj, 'error'):
-                sleep(RATE_LIMIT_SLEEP)
                 logDataObj = getLastPrice()
             bidOverBuy = logDataObj.highestBidBaseFEX/bidDuringBuy
             if bidOverBuy > 100.70/100:
