@@ -522,6 +522,20 @@ def execute_request(http_method, url, path, expires, data, logDataObj):
         return logDataObj
     except KeyboardInterrupt:
         exit() #add this in outer layer if you run into trouble: except SystemExit: exit()
+    except requests.exceptions.ReadTimeout:
+        print(bcolors.FAIL  + "'Experimental error handling: ReadTimeout'" + bcolors.ENDC)
+        exc_type, exc_value, exc_traceback = sys.exc_info()
+        logDataObj.error_msg = str(traceback.format_exception(exc_type, exc_value, exc_traceback))
+        # traceback.print_exc()
+        logDataObj.timestamp = time.time()
+        logDataObj.http_method = http_method
+        logDataObj.url = url
+        logDataObj.path = path
+        logDataObj.expires = expires
+        logDataObj.data = data
+        logDataObj.error = True
+        logDataObj.error_execute_request_exp_ReadTimeout = True
+        return logDataObj
     except:
         print(bcolors.FAIL  + "------------------ERROR------------------" + bcolors.ENDC)
         exc_type, exc_value, exc_traceback = sys.exc_info()
