@@ -523,7 +523,7 @@ def execute_request(http_method, url, path, expires, data, logDataObj):
     except KeyboardInterrupt:
         exit() #add this in outer layer if you run into trouble: except SystemExit: exit()
     except requests.exceptions.ReadTimeout:
-        print(bcolors.FAIL  + "'Experimental error handling: ReadTimeout'" + bcolors.ENDC)
+        print(bcolors.FAIL  + "Experimental error handling: ReadTimeout (not logging for some reason)" + bcolors.ENDC)
         exc_type, exc_value, exc_traceback = sys.exc_info()
         logDataObj.error_msg = str(traceback.format_exception(exc_type, exc_value, exc_traceback))
         # traceback.print_exc()
@@ -645,6 +645,53 @@ while hasattr(logDataObj, 'error'):
 print(bcolors.OKBLUE  + "Starting cash balance: $" + str(logDataObj.cash_balance) + bcolors.ENDC)
 
 
+#buy to start
+#loop algorith 0.2 (use with USDT)
+buyTrigger = False
+while buyTrigger==False:
+    #conditions in which it becomes desirable to buy, set buyTrigger
+    logDataObj = logDataErrVfctn()
+    while hasattr(logDataObj, 'error'):
+        logDataObj = getLastPrice()
+    askOverBid = logDataObj.lowestAskBaseFEX/logDataObj.highestBidBaseFEX
+    #veryify that there's no huge discrepency between ask and bid
+    #at $7000, .035% more is 7002.45
+    if askOverBid < 100.035/100:
+        buyTrigger = True
+    else: #assuming it's always favorable to buy
+        buyTrigger = True
+#exeute the buy-------------------------------------------------------------
+logDataObj = logDataErrVfctn()
+while hasattr(logDataObj, 'error'):
+    logDataObj = getLastPrice()
+tryPrice = round(logDataObj.highestBidBaseFEX*1.02*2)/2
+#ORDER STATUS
+orderStatusFilled = False
+while orderStatusFilled==False:
+    logDataObj = verifyOrderUSDT(C_TO_TRD, "BUY", tryPrice)
+    logDataObj = waitUntilOrderFill(logDataObj.orderID)
+    if logDataObj.orderStatus=='REJECTED':
+        pass
+    else:
+        orderStatusFilled = True
+excPrice = logDataObj.excPrice
+if not excPrice==None:
+    buyPrice = excPrice
+else:
+    print('buy price was None, estimating')
+    logDataObj = logDataErrVfctn()
+    while hasattr(logDataObj, 'error'):
+        logDataObj = getLastPrice()
+    buyPrice = logDataObj.highestBidBaseFEX
+print(bcolors.OKBLUE  + "Buy  order executed at $" + str(buyPrice) + bcolors.ENDC)
+#get meta
+logDataObj = logDataErrVfctn()
+while hasattr(logDataObj, 'error'):
+    logDataObj = getLastPrice()
+bidDuringBuy = logDataObj.highestBidBaseFEX
+#now we have bought it at price buyPrice and gotten bidDuringBuy, no errors
+
+
 
 
 
@@ -656,9 +703,12 @@ while True:
 
 
         #loop algorith 0.2 (use with USDT)
-        buyTrigger = False
-        while buyTrigger==False:
-            #conditions if which it becomes desirable to buy, set buyTrigger
+
+
+
+        sellTrigger = False
+        while sellTrigger==False:
+            #conditions in which it becomes desirable to sell, set sellTrigger
             logDataObj = logDataErrVfctn()
             while hasattr(logDataObj, 'error'):
                 logDataObj = getLastPrice()
@@ -666,7 +716,64 @@ while True:
             #veryify that there's no huge discrepency between ask and bid
             #at $7000, .035% more is 7002.45
             if askOverBid < 100.035/100:
+                sellTrigger = True
+
+
+            #extra code to prevent bugs:
+            logDataObj = logDataErrVfctn()
+            while hasattr(logDataObj, 'error'):
+                logDataObj = getLastPrice()
+            highestBidBaseFEX = logDataObj.highestBidBaseFEX
+
+        #execute the sell-----------------------------------------------------------
+        tryPrice = round(highestBidBaseFEX*0.98*2)/2
+        #ORDER STATUS
+        orderStatusFilled = False
+        while orderStatusFilled==False:
+            logDataObj = verifyOrderUSDT(C_TO_TRD, "SELL", tryPrice)
+            logDataObj = waitUntilOrderFill(logDataObj.orderID)
+            if logDataObj.orderStatus=='REJECTED':
+                pass
+            else:
+                orderStatusFilled = True
+        excPrice = logDataObj.excPrice
+        if not excPrice==None:
+            sellPrice = excPrice
+        else:
+            print('sell price was None, estimating')
+            logDataObj = logDataErrVfctn()
+            while hasattr(logDataObj, 'error'):
+                logDataObj = getLastPrice()
+            sellPrice = logDataObj.highestBidBaseFEX
+        print(bcolors.OKBLUE  + "Sell order executed at $" + str(sellPrice) + bcolors.ENDC)
+        #now we have sold it at price sellPrice, no errors
+
+
+
+        buyTrigger = False
+        while buyTrigger==False:
+            #conditions in which it becomes desirable to buy, set buyTrigger
+            logDataObj = logDataErrVfctn()
+            while hasattr(logDataObj, 'error'):
+                logDataObj = getLastPrice()
+            bidOverBuy = logDataObj.highestBidBaseFEX/bidDuringBuy
+            if bidOverBuy > 100.70/100:
+                print(bcolors.OKBLUE  + '+0.7% expected' + bcolors.ENDC)
                 buyTrigger = True
+            elif bidOverBuy < 99.80/100:
+                print(bcolors.OKBLUE  + '-0.2% expected' + bcolors.ENDC)
+                buyTrigger = True
+            highestBidBaseFEX = logDataObj.highestBidBaseFEX
+
+
+
+            #extra code to prevent bugs:
+            logDataObj = logDataErrVfctn()
+            while hasattr(logDataObj, 'error'):
+                logDataObj = getLastPrice()
+            askOverBid = logDataObj.lowestAskBaseFEX/logDataObj.highestBidBaseFEX
+
+
         #exeute the buy-------------------------------------------------------------
         logDataObj = logDataErrVfctn()
         while hasattr(logDataObj, 'error'):
@@ -698,43 +805,6 @@ while True:
         bidDuringBuy = logDataObj.highestBidBaseFEX
         #now we have bought it at price buyPrice and gotten bidDuringBuy, no errors
 
-
-
-        sellTrigger = False
-        while sellTrigger==False:
-            #conditions if which it becomes desirable to sell, set sellTrigger
-            logDataObj = logDataErrVfctn()
-            while hasattr(logDataObj, 'error'):
-                logDataObj = getLastPrice()
-            bidOverBuy = logDataObj.highestBidBaseFEX/bidDuringBuy
-            if bidOverBuy > 100.70/100:
-                print(bcolors.OKBLUE  + '+0.7% expected' + bcolors.ENDC)
-                sellTrigger = True
-            elif bidOverBuy < 99.80/100:
-                print(bcolors.OKBLUE  + '-0.2% expected' + bcolors.ENDC)
-                sellTrigger = True
-        #execute the sell-----------------------------------------------------------
-        tryPrice = round(logDataObj.highestBidBaseFEX*0.98*2)/2
-        #ORDER STATUS
-        orderStatusFilled = False
-        while orderStatusFilled==False:
-            logDataObj = verifyOrderUSDT(C_TO_TRD, "SELL", tryPrice)
-            logDataObj = waitUntilOrderFill(logDataObj.orderID)
-            if logDataObj.orderStatus=='REJECTED':
-                pass
-            else:
-                orderStatusFilled = True
-        excPrice = logDataObj.excPrice
-        if not excPrice==None:
-            sellPrice = excPrice
-        else:
-            print('sell price was None, estimating')
-            logDataObj = logDataErrVfctn()
-            while hasattr(logDataObj, 'error'):
-                logDataObj = getLastPrice()
-            sellPrice = logDataObj.highestBidBaseFEX
-        print(bcolors.OKBLUE  + "Sell order executed at $" + str(sellPrice) + bcolors.ENDC)
-        #now we have sold it at price sellPrice, no errors
 
 
         #analyze results
