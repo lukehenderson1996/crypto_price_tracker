@@ -54,7 +54,7 @@ while hasattr(logDataObj, 'error'):
 logDataObj = waitUntilOrderFill(id) #example: '5c55eeea-959a-4bcd-0005-fcbf01ba8a44'
 #gives logDataObj.excPrice (price or None)
 
-#makes trigger order
+#makes trigger order UNFINISHED
 def verifyTriggerOrderUSDT():
 #gives logDataObj.orderID
 
@@ -80,7 +80,7 @@ logDataObj = placeOrderBTC(size, type, side) #example: 10, "MARKET", "BUY"
 logDataObj = placeOrderUSDT(size, type, side, price, trigPrice) #example: 1, "MARKET", "SELL", None, None      or      1, "LIMIT", "BUY", 1000, None
 #produces logDataObj.orderID
 
-#verifyContracts
+#verifyContracts, trades BTC only until contracts==num
 verifyContracts(num)
 #gives nothing
 
