@@ -538,19 +538,39 @@ def execute_request(http_method, url, path, expires, data, logDataObj):
         return logDataObj
     except:
         print(bcolors.FAIL  + "------------------ERROR------------------" + bcolors.ENDC)
+        print(bcolors.FAIL  + "Error handler execute_request position 1" + bcolors.ENDC)
+        print(time.time())
         exc_type, exc_value, exc_traceback = sys.exc_info()
         logDataObj.error_msg = str(traceback.format_exception(exc_type, exc_value, exc_traceback))
         traceback.print_exc()
         print(bcolors.FAIL  + "//////////////////ERROR//////////////////" + bcolors.ENDC)
+        print(bcolors.FAIL  + "Error handler execute_request position 2" + bcolors.ENDC)
         logDataObj.timestamp = time.time()
+        print(bcolors.FAIL  + "Error handler execute_request position 3" + bcolors.ENDC)
         logDataObj.http_method = http_method
+        print(bcolors.FAIL  + "Error handler execute_request position 4" + bcolors.ENDC)
         logDataObj.url = url
+        print(bcolors.FAIL  + "Error handler execute_request position 5" + bcolors.ENDC)
         logDataObj.path = path
+        print(bcolors.FAIL  + "Error handler execute_request position 6" + bcolors.ENDC)
         logDataObj.expires = expires
+        print(bcolors.FAIL  + "Error handler execute_request position 7" + bcolors.ENDC)
         logDataObj.data = data
+        print(bcolors.FAIL  + "Error handler execute_request position 8" + bcolors.ENDC)
         logDataObj.error = True
+        print(bcolors.FAIL  + "Error handler execute_request position 9" + bcolors.ENDC)
         logDataObj.error_execute_request = True
+        print(bcolors.FAIL  + "Error handler execute_request position 10" + bcolors.ENDC)
         return logDataObj
+        #the following error happened on 04 20 with no log created with a matching traceback:
+        # ------------------ERROR------------------
+        # Traceback (most recent call last):
+        #   File "auto_trader.py", line 520, in execute_request
+        #     logDataObj.RateLimit_Remaining = response.headers['X-RateLimit-Remaining']
+        #   File "/usr/lib/python3/dist-packages/requests/structures.py", line 54, in __getitem__
+        #     return self._store[key.lower()][1]
+        # KeyError: 'x-ratelimit-remaining'
+        # //////////////////ERROR//////////////////
 
 
 
